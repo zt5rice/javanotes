@@ -193,94 +193,106 @@ localhost is a hostname that refers to the current computer used to access it. I
 
 
 <details>
-<summary> </summary>
+<summary> HTTP headers </summary>
     <ul>
-        <li> </li>
-        <li> </li>
+        <li> HTTP headers from a request follow the same basic structure of an HTTP header: a case-insensitive string followed by a colon (':') and a value whose structure depends upon the header. </li>
+        <li> 
+            <ul>
+                <li> General headers, like Via, apply to the message as a whole.</li>
+                <li> Request headers, like User-Agent, Accept-Type, modify the request by specifying it further (like Accept-Language), by giving context (like Referer), or by conditionally restricting it (like If-None).</li>
+                <li> Representation metadata headers (formerly entity headers), like Content-Length that describe the encoding and format of the message body (only present if the message has a body).</li>
+            </ul>
+        </li>
     </ul> 
+    <p><img src="HTTP_request_headers3.png" alt="description" width="213" height="70" /></p>
 </details>
-HTTP headers [Link]
 
 <details>
-<summary> </summary>
+<summary> Content-Type header</summary>
     <ul>
-        <li> </li>
-        <li> </li>
+        <li> The Content-Type entity header is used to indicate the media type of the resource. </li>
     </ul> 
 </details>
-Content-Type header [Link] [Media Type]
 
 <details>
-<summary> </summary>
+<summary> Access-Control-* header and CORS</summary>
     <ul>
-        <li> </li>
-        <li> </li>
+        <li> Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any other origins (domain, scheme, or port) than its own from which a browser should permit loading of resources. </li>
+        <li> ??? </li>
     </ul> 
 </details>
-Access-Control-* header and CORS [Link] 
 
 <details>
-<summary> </summary>
+<summary> HTTP Status </summary>
     <ul>
-        <li> </li>
-        <li> </li>
+        <li> 1xx: Information </li>
+        <li> 2xx: Successful </li>
+        <li> 3xx: Redirection </li>
+        <li> 4xx: Client Error </li>     
+        <li> 5xx: Server Error</li>   
     </ul> 
 </details>
-HTTP Status [Link]
 
 <details>
-<summary> </summary>
+<summary> HTTP message body</summary>
     <ul>
-        <li> </li>
-        <li> </li>
+        <li> HTTP Message Body is the data bytes transmitted in an HTTP transaction message immediately following the headers if there are any. </li>
+        <li> The request/response message consists of the following:
+            <ul>
+                <li> Request line, such as GET /logo.gif HTTP/1.1 or Status line, such as HTTP/1.1 200 OK,</li>
+                <li> Headers </li>
+                <li> An empty line </li>
+                <li> Optional HTTP message body data </li>
+            </ul>
+        </li>
     </ul> 
 </details>
-HTTP message body [Wikipedia]
 
 <details>
-<summary> </summary>
-    <ul>
-        <li> </li>
-        <li> </li>
+<summary> What’s JSON? </summary>
+    <ul> JSON (JavaScript Object Notation)
+        <li> JSON is a language-independent data format. It was derived from JavaScript. </li>
+        <li>  JSON filenames use the extension .json. </li>
     </ul> 
 </details>
-What’s JSON? [Wikipedia] [Link] 
 
 <details>
-<summary> </summary>
-    <ul>
-        <li> </li>
-        <li> </li>
+<summary> JSON vs XML</summary>
+    <ul> Extensible Markup Language (XML) is a markup language.
+        <li> HTML displays data and describes the structure of a webpage, whereas XML stores and transfers data. </li>
+        <li> HTML is a simple predefined language, while XML is a standard language that defines other languages.</li>
     </ul> 
 </details>
-JSON vs XML [Link]
 
 <details>
-<summary> </summary>
-    <ul>
-        <li> </li>
-        <li> </li>
+<summary> What’s URL?</summary>
+    <ul> Uniform Resource Locator (URL)
     </ul> 
 </details>
-What’s URL? [Wikipedia]
 
+<ul>
+<li>
 <details>
-<summary> </summary>
-    <ul>
-        <li> </li>
-        <li> </li>
+<summary> URL vs URI</summary>
+    <ul> URI stands for Uniform Resource Identifier.
+        <li> URL is a subset of URI that specifies where a resource is exists and the mechanism for retrieving it.</li>
+        <li> A URI is a superset of URL that identifies a resource either by URL or URN (Uniform Resource Name) or both.</li>
     </ul> 
 </details>
-URL vs URI [stackoverflow] [Link]
+</li>
 
+<li>
 <details>
-<summary> </summary>
+<summary> URL format </summary>
     <ul>
-        <li> </li>
-        <li> </li>
+        <li> A scheme. (HTTP (without SSL) or HTTPS (with SSL))</li>
+        <li> A host. Host names can also be followed by a port number.  </li>
+        <li> A path.</li>
+        <li> A query string.</li>
     </ul> 
 </details>
-URL format [Link]
+</li>
+</ul>
 
 #### Apache Tomcat Server and Maven Project
 Apache Tomcat Server [Wikipedia] [Official Website] [Source code]
