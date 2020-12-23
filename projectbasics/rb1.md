@@ -54,30 +54,232 @@
     </ul> 
 </details>
 </ul> 
+
 #### Web Application Basics
-What's a web server? [Wikipedia] [Link]
-Client Server Architecture(Server vs Client) [Wikipedia] [Link]
-Backend vs Frontend [Wikipedia] [GeeksforGeeks]
-What is localhost? [Wikipedia] [Link]
-Network Protocols and OSI model [Network Protocols Wikipedia] [OSI Model Wikipedia]
-TCP/IP [IP Wikipedia] [TCP Wikipedia] [IP Suite Wikipedia]
-TCP vs UDP [UDP Wikipedia] [Link] [Link]
-Port [Wikipedia]
-What’s HTTP? [Wikipedia] [W3School] [MDN]
-HTTP 1.0 vs HTTP 1.1 vs HTTP 2.0 [stackoverflow] [Link]
-HTTP vs HTTPS [HTTPS Wikipedia] [stackoverflow] [Link] [Link]
-What is an HTTP server and what does it do? [Quora]
-HTTP messages(request and response) [Link]
-HTTP request methods(GET vs POST vs PUT) [Link]
+<details>
+<summary>What's a web server? </summary>
+    <ul>
+        <li>A web server is server software, or hardware dedicated to running this software, that can satisfy client requests on the World Wide Web. </li>
+    </ul> 
+</details>
+
+<ul>
+<details>
+<summary>Client Server Architecture(Server vs Client) </summary>
+    <ul>
+        <li>Client–server model is a distributed application structure that partitions tasks or workloads between the servers (providers of a resource or service) , and clients (service requesters). </li>
+    </ul> 
+</details>
+
+<details>
+<summary>Backend vs Frontend </summary>
+    <ul>
+        <li>Front End Development: The part of a website that user interacts with directly is termed as front end. 
+            <ul>
+                <li>Front end Languages: HTML(Hyper Text Markup Language), CSS(Cascading Style Sheets), JavaScript. </li>
+                <li>Front End Frameworks and Libraries: AngularJS/ React.js/ jQuery/ SASS </li>
+            </ul>
+        </li>
+        <li>Backend Development: Backend is server side of the website. It stores and arranges data, and also makes sure everything on the client-side of the website works fine.
+             <ul>
+                 <li>Front end Languages: PHP/c++/java/python/js. </li>
+                 <li>Front End Frameworks and Libraries: Express, Django, Rails, Laravel, Spring, etc. </li>
+             </ul>
+        </li>
+    </ul> 
+</details>
+
+<details>
+<summary>What is localhost? </summary>
+    <ul>
+localhost is a hostname that refers to the current computer used to access it. It is used to access the network services that are running on the host via the loopback network interface. Using the loopback interface bypasses any local network interface hardware.
+    </ul> 
+</details>
+
+</ul>
+
+<hr />
+
+<details>
+<summary>Network Protocols and OSI model </summary>
+    <ul>
+        <li>Open Systems Interconnection model (OSI model) </li>
+        <li> Application / Presentation / Session layer / Transport / Network / Data link / Physical layer </li>
+    </ul> 
+</details>
+
+<details>
+<summary>TCP/IP </summary>
+    <ul>
+        <li>Transmission Control Protocol (TCP) /  Internet Protocol (IP)  </li>
+        <li>The Internet protocol suite is the conceptual model and set of communications protocols used in the Internet and similar computer networks. </li>
+    </ul> 
+</details>
+
+<details>
+<summary>TCP vs UDP </summary>
+    <ul>
+        <li> Transmission Control Protocol (TCP) is a connection-oriented protocol that computers use to communicate over the internet. It is one of the main protocols in TCP/IP networks. TCP provides error-checking and guarantees delivery of data and that packets will be delivered in the order they were sent. </li>
+        <li> User Datagram Protocol (UDP) is a connectionless protocol that works just like TCP but assumes that error-checking and recovery services are not required. Instead, UDP continuously sends datagrams to the recipient whether they receive them or not. </li>
+        <li> Similarity: They both work on the transport layer of the TCP/IP protocol stack and both use the IP protocol./li>
+        <li> Difference: Connection and connectionless / Reliability / Flow control / Ordering / Speed</li>
+        <li> Usage:
+            <ul>
+                <li> TCP - require high reliability where timing is less of a concern.</li>
+                <li> UDP - require speed and efficiency</li>
+            </ul>
+        </li>
+    </ul> 
+</details>
+
+<details>
+<summary> What is port?</summary>
+    <ul>
+        <li> a port is a communication endpoint. </li>
+        <li> At the software level, within an operating system, a port is a logical construct that identifies a specific process or a type of network service. </li>
+        <li> Identified for each transport protocol and address combination by a 16-bit unsigned number, known as the port number.</li>
+        <Li> The most common transport protocols: TCP, UDP. </Li>
+    </ul> 
+</details>
+
+<details>
+<summary>What’s HTTP? </summary>
+    <ul>
+        <li> The Hypertext Transfer Protocol (HTTP) is an application layer protocol for distributed, collaborative, hypermedia information systems. </li>
+        <li> </li>
+    </ul> 
+</details>
+
+<details>
+<summary>HTTP 1.0 vs HTTP 1.1 vs HTTP 2.0 </summary>
+    <ul>
+        <li> 1989 / 1997 / 2015 </li>
+    </ul> 
+</details>
+
+<details>
+<summary>HTTP vs HTTPS </summary>
+    <ul>
+        <li> HTTPS means that you tunnel the HTTP protocol over TLS/SSL which encrypts the HTTP payload.</li>
+    </ul> 
+</details>
+
+<details>
+<summary>What is an HTTP server and what does it do? </summary>
+    <ul>
+        <li> HTTP Server AKA web server responds to requests from web browsers like firefox or chrome. </li>
+        <li> The HTTP Server is the implementation of that protocol in a piece of Software.</li>
+    </ul> 
+</details>
+
+<details>
+<summary>HTTP messages </summary>
+    <ul>
+        <li> HTTP messages are how data is exchanged between a server and a client. </li>
+        <li> There are two types of messages: requests sent by the client to trigger an action on the server, and responses, the answer from the server.</li>
+    </ul> 
+</details>
+
+<details>
+<summary>HTTP request methods(GET vs POST vs PUT) </summary>
+    <ul>
+        <li> HTTP works as a request-response protocol between a client and server.</li>
+        <li> GET is used to request data from a specified resource.</li>
+        <li> POST is used to send data to a server to create/update a resource.</li>
+        <li> PUT is used to send data to a server to create/update a resource.</li>
+        <li> Difference btn POST and PUT: when calling multiple times, PUT has the same result, while POST creates the same resource multiple times. </li>
+    </ul> 
+</details>
+
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 HTTP headers [Link]
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 Content-Type header [Link] [Media Type]
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 Access-Control-* header and CORS [Link] 
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 HTTP Status [Link]
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 HTTP message body [Wikipedia]
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 What’s JSON? [Wikipedia] [Link] 
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 JSON vs XML [Link]
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 What’s URL? [Wikipedia]
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 URL vs URI [stackoverflow] [Link]
+
+<details>
+<summary> </summary>
+    <ul>
+        <li> </li>
+        <li> </li>
+    </ul> 
+</details>
 URL format [Link]
 
 #### Apache Tomcat Server and Maven Project
