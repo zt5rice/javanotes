@@ -323,26 +323,32 @@ localhost is a hostname that refers to the current computer used to access it. I
     </ul> 
 </details>
     
+   <li>
    <details>
     <summary> HTTP server vs Application server</summary>
         <ul>
             <li> </li>
         </ul> 
    </details>
-
+   </li>
+   
+   <li>   
    <details>
     <summary> HTTP port vs AJP port</summary>
         <ul>
             <li> </li>
         </ul> 
    </details>
-
+   </li>
+   
+   <li>   
    <details>
     <summary> What is Server Location(aka CATALINA_HOME)?</summary>
         <ul>
             <li> </li>
         </ul> 
    </details>
+   </li>
 </ul>
 
 <ul>
@@ -354,7 +360,6 @@ Options other than Tomcat
             <li> </li>
         </ul> 
    </details>
- [Wikipedia] [Official Website]
 
    <details>
         <summary> Apache HTTP Server vs Apache Tomcat Server </summary>
