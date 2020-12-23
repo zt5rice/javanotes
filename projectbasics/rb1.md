@@ -1,5 +1,8 @@
 ### Web Application
+<hr />
+
 #### Local Environment Setup
+
 <hr />
 
 <details>
@@ -55,7 +58,10 @@
     </ul> 
 </details>
 
+<hr />
+
 #### Web Application Basics
+
 <hr />
 <details>
 <summary>What's a web server? </summary>
