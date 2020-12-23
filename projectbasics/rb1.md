@@ -218,7 +218,7 @@ localhost is a hostname that refers to the current computer used to access it. I
             </ul>
         </li>
     </ul> 
-    <p><img src="HTTP_request_headers3.png" alt="description" width="213" height="70" /></p>
+    <p><img src="HTTP_request_headers3.png" alt="description" width="851" height="279" /></p>
 </details>
 
 <ul>
