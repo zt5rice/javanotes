@@ -309,20 +309,120 @@ localhost is a hostname that refers to the current computer used to access it. I
 </details>
 </ul>
 
+<hr />
+
 #### Apache Tomcat Server and Maven Project
-Apache Tomcat Server [Wikipedia] [Official Website] [Source code]
-HTTP server vs Application server [Link] [stackoverflow]
-HTTP port vs AJP port [Official Website] [stackoverflow]
-What is Server Location(aka CATALINA_HOME)? [stackoverflow]
+
+<hr />
+
+<ul>
+<details>
+<summary> Apache Tomcat Server </summary>
+    <ul>
+        <li> </li>
+    </ul> 
+</details>
+    
+   <details>
+    <summary> HTTP server vs Application server</summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> HTTP port vs AJP port</summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> What is Server Location(aka CATALINA_HOME)?</summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+</ul>
+
+<ul>
 Options other than Tomcat
-Apache HTTP Server [Wikipedia] [Official Website]
-Apache HTTP Server vs Apache Tomcat Server [Link]
-Node.js [Wikipedia] [Official Website]
-Node.js vs Java [Link]
-Nginx [Wikipedia] [Official Website]
-Nginx vs Tomcat [Link]
+
+   <details>
+    <summary> Apache HTTP Server </summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+ [Wikipedia] [Official Website]
+
+   <details>
+        <summary> Apache HTTP Server vs Apache Tomcat Server </summary>
+            <ul>
+                <li> </li>
+            </ul> 
+   </details>
+
+
+   <details>
+    <summary> Node.js </summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> Node.js vs Java </summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> Nginx </summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> Nginx vs Tomcat </summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+
+</ul>
+
+<ul> 
 Maven Project
-What is Maven and why do we need it? [Wikipedia] [Official website] [Quora]
-Conventions of groupId, artifactId and version [Official Website] [stackoverflow]
-Maven Archetypes [Official Link]
-What’s the difference between Maven Build and Maven Install [stackoverflow]
+
+   <details>
+    <summary> What is Maven and why do we need it?</summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> Conventions of groupId, artifactId and version</summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> Maven Archetypes</summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+
+   <details>
+    <summary> What’s the difference between Maven Build and Maven Install? </summary>
+        <ul>
+            <li> </li>
+        </ul> 
+   </details>
+</ul>
