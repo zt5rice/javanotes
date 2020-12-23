@@ -1,5 +1,6 @@
-### Lesson 1 Web Application
+### Web Application
 #### Local Environment Setup
+<ul> 
 <details>
 <summary>What is IDE and why do we need IDE?</summary>
     <ul>
@@ -17,8 +18,6 @@
         <li>Integrated debugging</li>
         <li>Integrated source control</li>
         <li>Navigating to where a compile-time error or run-time exception occurred directly from the error details.</li>
-        Etc!
-        <a>https://stackoverflow.com/questions/208193/why-should-i-use-an-ide</a>
     </ul> 
 </details>
 
@@ -46,7 +45,6 @@
         <li>As a client/server model, the browser is the client run on a computer that contacts the Web server and requests information. The Web server sends the information back to the Web browser which displays the results on the computer or other Internet-enabled device that supports a browser. </li>
     </ul> 
 </details>
-[Wikipedia] [Link] [Link]
 
 <details>
 <summary>What is API testing? What is Postman and why we use it? </summary>
@@ -55,7 +53,7 @@
         <li>Postman is a great tool when trying to dissect RESTful APIs made by others or test ones you have made yourself. It offers a sleek user interface with which to make HTML requests, without the hassle of writing a bunch of code just to test an API's functionality. </li>
     </ul> 
 </details>
-
+</ul> 
 #### Web Application Basics
 What's a web server? [Wikipedia] [Link]
 Client Server Architecture(Server vs Client) [Wikipedia] [Link]
