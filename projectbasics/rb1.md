@@ -1,6 +1,7 @@
 ### Web Application
 #### Local Environment Setup
-<ul> 
+<hr />
+
 <details>
 <summary>What is IDE and why do we need IDE?</summary>
     <ul>
@@ -53,9 +54,9 @@
         <li>Postman is a great tool when trying to dissect RESTful APIs made by others or test ones you have made yourself. It offers a sleek user interface with which to make HTML requests, without the hassle of writing a bunch of code just to test an API's functionality. </li>
     </ul> 
 </details>
-</ul> 
 
 #### Web Application Basics
+<hr />
 <details>
 <summary>What's a web server? </summary>
     <ul>
@@ -97,8 +98,6 @@ localhost is a hostname that refers to the current computer used to access it. I
 </details>
 
 </ul>
-
-<hr />
 
 <details>
 <summary>Network Protocols and OSI model </summary>
