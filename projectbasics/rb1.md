@@ -315,14 +315,14 @@ localhost is a hostname that refers to the current computer used to access it. I
 
 <hr />
 
-<ul>
 <details>
 <summary> Apache Tomcat Server </summary>
     <ul>
         <li> </li>
     </ul> 
 </details>
-    
+
+<ul>    
    <details>
     <summary> HTTP server vs Application server</summary>
         <ul>
@@ -345,9 +345,14 @@ localhost is a hostname that refers to the current computer used to access it. I
    </details>
 </ul>
 
-<ul>
-Options other than Tomcat
+<details>
+<summary> Options other than Tomcat </summary>
+    <ul>
+        <li> </li>
+    </ul> 
+</details>
 
+<ul>
    <details>
     <summary> Apache HTTP Server </summary>
         <ul>
@@ -391,13 +396,15 @@ Options other than Tomcat
             <li> </li>
         </ul> 
    </details>
-
-
 </ul>
 
+<details>
+<summary> Maven Project </summary>
+    <ul>
+        <li> </li>
+    </ul> 
+</details>
 <ul> 
-Maven Project
-
    <details>
     <summary> What is Maven and why do we need it?</summary>
         <ul>
