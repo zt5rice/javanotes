@@ -108,6 +108,7 @@ localhost is a hostname that refers to the current computer used to access it. I
     </ul> 
 </details>
 
+<ul>
 <details>
 <summary>TCP/IP </summary>
     <ul>
@@ -116,6 +117,7 @@ localhost is a hostname that refers to the current computer used to access it. I
     </ul> 
 </details>
 
+<ul>
 <details>
 <summary>TCP vs UDP </summary>
     <ul>
@@ -141,6 +143,7 @@ localhost is a hostname that refers to the current computer used to access it. I
         <Li> The most common transport protocols: TCP, UDP. </Li>
     </ul> 
 </details>
+</ul>
 
 <details>
 <summary>What’s HTTP? </summary>
@@ -149,6 +152,8 @@ localhost is a hostname that refers to the current computer used to access it. I
         <li> </li>
     </ul> 
 </details>
+
+<ul>
 
 <details>
 <summary>HTTP 1.0 vs HTTP 1.1 vs HTTP 2.0 </summary>
@@ -163,6 +168,9 @@ localhost is a hostname that refers to the current computer used to access it. I
         <li> HTTPS means that you tunnel the HTTP protocol over TLS/SSL which encrypts the HTTP payload.</li>
     </ul> 
 </details>
+</ul>
+
+</ul>
 
 <details>
 <summary>What is an HTTP server and what does it do? </summary>
@@ -180,6 +188,7 @@ localhost is a hostname that refers to the current computer used to access it. I
     </ul> 
 </details>
 
+<ul>
 <details>
 <summary>HTTP request methods(GET vs POST vs PUT) </summary>
     <ul>
@@ -207,6 +216,7 @@ localhost is a hostname that refers to the current computer used to access it. I
     <p><img src="HTTP_request_headers3.png" alt="description" width="213" height="70" /></p>
 </details>
 
+<ul>
 <details>
 <summary> Content-Type header</summary>
     <ul>
@@ -221,6 +231,7 @@ localhost is a hostname that refers to the current computer used to access it. I
         <li> ??? </li>
     </ul> 
 </details>
+</ul>
 
 <details>
 <summary> HTTP Status </summary>
@@ -248,6 +259,7 @@ localhost is a hostname that refers to the current computer used to access it. I
     </ul> 
 </details>
 
+<ul>
 <details>
 <summary> What’s JSON? </summary>
     <ul> JSON (JavaScript Object Notation)
@@ -263,6 +275,8 @@ localhost is a hostname that refers to the current computer used to access it. I
         <li> HTML is a simple predefined language, while XML is a standard language that defines other languages.</li>
     </ul> 
 </details>
+</ul>
+</ul>
 
 <details>
 <summary> What’s URL?</summary>
@@ -271,7 +285,6 @@ localhost is a hostname that refers to the current computer used to access it. I
 </details>
 
 <ul>
-<li>
 <details>
 <summary> URL vs URI</summary>
     <ul> URI stands for Uniform Resource Identifier.
@@ -279,9 +292,7 @@ localhost is a hostname that refers to the current computer used to access it. I
         <li> A URI is a superset of URL that identifies a resource either by URL or URN (Uniform Resource Name) or both.</li>
     </ul> 
 </details>
-</li>
 
-<li>
 <details>
 <summary> URL format </summary>
     <ul>
@@ -291,7 +302,6 @@ localhost is a hostname that refers to the current computer used to access it. I
         <li> A query string.</li>
     </ul> 
 </details>
-</li>
 </ul>
 
 #### Apache Tomcat Server and Maven Project
