@@ -1902,9 +1902,12 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 -  移动端最小触控区域是多大？
 
--  jQuery 的 slideUp动画 ，如果目标元素是被外部事件驱动, 当鼠标快速地连续触发外部元素事件, 动画会滞后的反复执行，该如何处理呢?
+<details>
+<summary> jQuery 的 slideUp动画 ，如果目标元素是被外部事件驱动, 当鼠标快速地连续触发外部元素事件, 动画会滞后的反复执行，该如何处理呢?</summary>
 
 		jquery stop(): 如：$("#div").stop().animate({width:"100px"},100);
+</details>
+
 
 -  把 Script 标签 放在页面的最底部的body封闭之前 和封闭之后有什么区别？浏览器会如何解析它们？
 
@@ -2041,7 +2044,8 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 #### <a name='other'>ECMAScript6 相关</a>
 
-- Object.is() 与原来的比较操作符“ ===”、“ ==”的区别？
+<details>
+<summary> Object.is() 与原来的比较操作符“ ===”、“ ==”的区别？</summary>
 
 		两等号判等，会在比较时进行类型转换；
 		三等号判等(判断严格)，比较时不进行隐式类型转换,（类型不同则会返回false）；
@@ -2051,6 +2055,8 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
  		Object.is 应被认为有其特殊的用途，而不能用它认为它比其它的相等对比更宽松或严格。
 
+</details>
+
 - ES6是如何实现编译成ES5的？
 
 - css-loader的原理？
@@ -2058,11 +2064,15 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 ## <a name='other'>前端框架</a>
 
-- React 使用场景？
+<details>
+<summary> React 使用场景？ </summary>
 
 			逻辑复杂单页应用，偏中后台管理系统，纯展示性的UI页面不合适、
 
-- 描述一下React 生命周期
+</details>
+
+<details>
+<summary> 描述一下React 生命周期 </summary>
 
 			渲染过程调用到的生命周期函数，主要几个要知道；
 			* constructor 
@@ -2085,32 +2095,48 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 			componentWillUnmount
 
 
-- 实现组件有哪些方式？
+</details>
+
+<details>
+<summary> 实现组件有哪些方式？</summary>
 
 		React.createClass 使用API来定义组件
 		React ES6 class component 用 ES6 的class 来定义组件
 		Functional stateless component 通过函数定义无状态组件
 
 
-- 应该在React生命周期的什么阶段发出ajax请求，为什么？
+</details>
+
+<details>
+<summary> 应该在React生命周期的什么阶段发出ajax请求，为什么？</summary>
 
 				AJAX请求应在 componentDidMount函数 进行请求。
 
-- shouldComponentUpdate函数有什么作用？
+</details>
+
+<details>
+<summary> shouldComponentUpdate函数有什么作用？</summary>
 
 				shouldComponentUpdate是一个允许我们自行决定某些组件（以及他们的子组件）是否进行更新的生命周期函数，reconciliation的最终目的是尽可能以最有效的方式去根据新的state更新UI，
 				如果你已经知道UI的哪些状态无需进行改变，就没必要去让React去判断它是否该改变。 让shouldComponentUpdate返回falss, React就会让当前的组件和其子组件保持不变。
 
-- 当组件的setState函数被调用之后，发生了什么？
+</details>
+
+<details>
+<summary> 当组件的setState函数被调用之后，发生了什么？</summary>
 
 				React会做的第一件事就是把你传递给setState的参数对象合并到组件原先的state。这个事件会导致一个“reconciliation”（调和）的过程。reconciliation的最终目标就是，
 				尽可能以最高效的方法，去基于新的state来更新UI。为了达到这个目的，React会构建一个React元素树（你可以把这个想象成一个表示UI的一个对象）。一旦这个树构建完毕，
 				React为了根据新的state去决定UI要怎么进行改变，它会找出这棵新树和旧树的不同之处。React能够相对精确地找出哪些位置发生了改变以及如何发生了什么变化，
 				并且知道如何只通过必要的更新来最小化重渲染。
 
-- 为什么循环产生的组件中要利用上key这个特殊的prop？
+</details>
+
+<details>
+<summary> 为什么循环产生的组件中要利用上key这个特殊的prop？</summary>
 
 				Keys负责帮助React跟踪列表中哪些元素被改变/添加/移除。React利用子元素的key在比较两棵树的时候，快速得知一个元素是新的还是刚刚被移除。没有keys，React也就不知道当前哪一个的item被移除了。
+</details>
 
 - React-router 路由的实现原理？
 
@@ -2118,27 +2144,41 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 - 受控组件(Controlled Component)与非受控组件(Uncontrolled Component)的区别
 
-- refs 是什么?
+<details>
+<summary> refs 是什么? </summary>
 
 			Refs是能访问DOM元素或组件实例的一个函数；
+</details>
 
 - React为什么自己定义一套事件体系呢，与浏览器原生事件体系有什么关系？
 
-- 什么时候应该选择用class实现一个组件，什么时候用一个函数实现一个组件？
+<details>
+<summary> 什么时候应该选择用class实现一个组件，什么时候用一个函数实现一个组件？</summary>
 
 			组件用到了state或者用了生命周期函数，那么就该使用Class component。其他情况下，应使用Functional component。
 
-- 什么是HoC（Higher-Order Component）？适用于什么场景？
+</details>
+
+<details>
+<summary> 什么是HoC（Higher-Order Component）？适用于什么场景？</summary>
 
 			高阶组件就是一个 React 组件包裹着另外一个 React 组件
 
-- 并不是父子关系的组件，如何实现相互的数据通信？
+</details>
+
+<details>
+<summary> 并不是父子关系的组件，如何实现相互的数据通信？</summary>
 
 			使用父组件，通过props将变量传入子组件 （如通过refs，父组件获取一个子组件的方法，简单包装后，将包装后的方法通过props传入另一个子组件 ）
 
-- 用过 React 技术栈中哪些数据流管理库？
+</details>
+
+<details>
+<summary> 用过 React 技术栈中哪些数据流管理库？</summary>
 
 			Redux\Dva
+
+</details>
 
 - Redux是如何做到可预测呢？
 
@@ -2163,7 +2203,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 - 常使用的库有哪些？常用的前端开发工具？开发过什么应用或组件？
 
-- 页面重构怎么操作？
+
+
+<details>
+<summary> 页面重构怎么操作？</summary>
 
 		网站重构：在不改变外部行为的前提下，简化结构、添加可读性，而在网站前端保持一致的行为。
 		也就是说是在不改变UI的情况下，对网站进行优化，在扩展的同时保持一致的UI。
@@ -2190,7 +2233,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		对于JS DOM的优化
 		HTTP服务器的文件缓存
 
-- 列举IE与其他浏览器不一样的特性？
+</details>
+
+<details>
+<summary> 列举IE与其他浏览器不一样的特性？</summary>
 
 
 		1、事件不同之处：
@@ -2204,11 +2250,17 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 			停止事件冒泡，IE 中阻止事件进一步冒泡，需要设置 cancelBubble 为 true，Mozzilla 中，需要调用 stopPropagation()；
 
 
-- 99%的网站都需要被重构是那本书上写的？
+</details>
+
+<details>
+<summary> 99%的网站都需要被重构是那本书上写的？</summary>
 
 		网站重构：应用web标准进行设计（第2版）
 
-- 什么叫优雅降级和渐进增强？
+</details>
+
+<details>
+<summary> 什么叫优雅降级和渐进增强？</summary>
 
 		优雅降级：Web站点在所有新式浏览器中都能正常工作，如果用户使用的是老式浏览器，则代码会针对旧版本的IE进行降级处理了,使之在旧式浏览器上以某种形式降级体验却不至于完全不能用。
 		如：border-shadow
@@ -2216,13 +2268,19 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		渐进增强：从被所有浏览器支持的基本功能开始，逐步地添加那些只有新版本浏览器才支持的功能,向页面增加不影响基础浏览器的额外样式和功能的。当浏览器支持时，它们会自动地呈现出来并发挥作用。
 		如：默认使用flash上传，但如果浏览器支持 HTML5 的文件上传功能，则使用HTML5实现更好的体验；
 
-- 是否了解公钥加密和私钥加密。
+</details>
+
+<details>
+<summary> 是否了解公钥加密和私钥加密。</summary>
 
 		一般情况下是指私钥用于对数据进行签名，公钥用于对签名进行验证;
 		HTTP网站在浏览器端用公钥加密敏感数据，然后在服务器端再用私钥解密。
 
 
-- WEB应用从服务器主动推送Data到客户端有那些方式？
+</details>
+
+<details>
+<summary> WEB应用从服务器主动推送Data到客户端有那些方式？</summary>
 
 		html5提供的Websocket
 		不可见的iframe
@@ -2231,7 +2289,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 	    XHR Multipart Streaming
 	    <script>标签的长时间连接(可跨域)
 
-- 对Node的优点和缺点提出了自己的看法？
+</details>
+
+<details>
+<summary> 对Node的优点和缺点提出了自己的看法？</summary>
 
 
 		*（优点）因为Node是基于事件驱动和无阻塞的，所以非常适合处理并发请求，
@@ -2243,7 +2304,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
           而且缺少足够多的第三方库支持。看起来，就像是Ruby/Rails当年的样子。
 
 
-- 你有用过哪些前端性能优化的方法？
+</details>
+
+<details>
+<summary> 你有用过哪些前端性能优化的方法？</summary>
 
 		  （1） 减少http请求次数：CSS Sprites, JS、CSS源码压缩、图片大小控制合适；网页Gzip，CDN托管，data缓存 ，图片服务器。
 
@@ -2262,7 +2326,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		  （8） 避免在页面的主体布局中使用table，table要等其中的内容完全下载之后才会显示出来，显示比div+css布局慢。
 		  对普通的网站有一个统一的思路，就是尽量向前端优化、减少数据库操作、减少磁盘IO。向前端优化指的是，在不影响功能和体验的情况下，能在浏览器执行的不要在服务端执行，能在缓存服务器上直接返回的不要到应用服务器，程序能直接取得的结果不要到外部取得，本机内能取得的数据不要到远程取，内存能取到的不要到磁盘取，缓存中有的不要去数据库查询。减少数据库操作指减少更新次数、缓存结果减少查询次数、将数据库执行的操作尽可能的让你的程序完成（例如join查询），减少磁盘IO指尽量不使用文件系统作为缓存、减少读写文件次数等。程序优化永远要优化慢的部分，换语言是无法“优化”的。
 
-- http状态码有那些？分别代表是什么意思？
+</details>
+
+<details>
+<summary> http状态码有那些？分别代表是什么意思？</summary>
 
 			简单版
 			[
@@ -2361,7 +2428,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		  HTTP 502 - 网关错误
 		  HTTP 503：由于超载或停机维护，服务器目前无法使用，一段时间后可能恢复正常
 
-- 一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）
+</details>
+
+<details>
+<summary> 一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）</summary>
 
 		  注：这题胜在区分度高，知识点覆盖广，再不懂的人，也能答出几句，
 		  而高手可以根据自己擅长的领域自由发挥，从URL规范、HTTP协议、DNS、CDN、数据库查询、
@@ -2384,25 +2454,32 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 			服务器交给后台处理完成后返回数据，浏览器接收文件（HTML、JS、CSS、图象等）；
 			浏览器对加载到的资源（HTML、JS、CSS等）进行语法解析，建立相应的内部数据结构（如HTML的DOM）；
 			载入解析到的资源文件，渲染页面，完成。
+</details>
 
 - 部分地区用户反应网站很卡，请问有哪些可能性的原因，以及解决方法？
 
 - 从打开app到刷新出内容，整个过程中都发生了什么，如果感觉慢，怎么定位问题，怎么解决?
 
-- 第一次访问页面中时弹出引导，用户关闭引导，之后再次进入页面时不希望出现引导，如何实现？
+<details>
+<summary> 第一次访问页面中时弹出引导，用户关闭引导，之后再次进入页面时不希望出现引导，如何实现？</summary>
 
 			localStorage
+</details>
 
 - 除了前端以外还了解什么其它技术么？你最最厉害的技能是什么？
 
-- 你用的得心应手用的熟练地编辑器&开发环境是什么样子？
+<details>
+<summary> 你用的得心应手用的熟练地编辑器&开发环境是什么样子？</summary>
 
 		Sublime Text 3 + 插件
 		Google chrome 查看页面UI、动画效果和交互功能，Firebug 兼容测试和
 		Node.js + webpack
 		Git 版本控制和Code Review
 
-- 对前端工程师这个职位是怎么样理解的？它的前景会怎么样？
+</details>
+
+<details>
+<summary> 对前端工程师这个职位是怎么样理解的？它的前景会怎么样？</summary>
 
 	    前端是最贴近用户的程序员，比后端、数据库、产品经理、运营、安全都近。
 		1、实现界面交互
@@ -2421,24 +2498,34 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		处理hack，兼容、写出优美的代码格式；
 
 		针对服务器的优化、拥抱最新前端技术。
+</details>
 
 - 你怎么看待Web App 、hybrid App、Native App？
 
 - 你移动端前端开发的理解？（和 Web 前端开发的主要区别是什么？）
 
-- 产品进行版本升级时，可能发生不兼容性问题，如何提前预防和解决？
+
+
+<details>
+<summary> 产品进行版本升级时，可能发生不兼容性问题，如何提前预防和解决？</summary>
 
 		非覆盖式发布，API新增而不是在原来的上面修改；
 		提前做好 @Deprecated的版本提示；
 
-- 你对加班的看法？
+</details>
+
+<details>
+<summary> 你对加班的看法？</summary>
 
 
    		加班就像借钱，原则应当是------救急不救穷
 
 
 
-- 平时如何管理你的项目？
+</details>
+
+<details>
+<summary> 平时如何管理你的项目？</summary>
 
 		先期团队必须确定好全局样式（global.css），编码模式(utf-8) 等；
 
@@ -2459,14 +2546,18 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 - 当团队人手不足，把功能代码写完已经需要加班的情况下，你会做前端代码的测试吗？
 
-- 说说最近最流行的一些东西吧？常去哪些网站？
+
+
+<details>
+<summary> 说说最近最流行的一些东西吧？常去哪些网站？</summary>
 
 			ES6\WebAssembly\Node\MVVM\Web Components\React\React Native\Webpack 组件化
+</details>
 
 - 知道什么是SEO并且怎么优化么? 知道各种meta data的含义么?
 
-
-- 移动端（Android IOS）怎么做好用户体验?
+<details>
+<summary> 移动端（Android IOS）怎么做好用户体验?</summary>
 
 		清晰的视觉纵线、
 		信息的分组、极致的减法、
@@ -2474,6 +2565,7 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		标签及文字的排布方式、
 		依靠明文确认密码、
 		合理的键盘利用、
+</details>
 
 - 简单描述一下你做过的移动APP项目研发流程？
 
