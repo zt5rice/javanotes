@@ -1,4 +1,4 @@
-# 项目一相关
+# Project 1
 - difference between header and nav tag header, how to choose?
 
     这个问题是这样的，我们的项目上面的红色区域整体是header，具体到左边的链接的部分是用nav标签来表示,所以在写的时候一般来讲网页的顶部是用header，nav标签嵌套在header里面
@@ -17,7 +17,7 @@
 
 Class 属性的作用是不是为了让developer更容易理解，然后后面CSS也可以方便对这一部分进行处理？ 还有 span section div这样的tag除了读起来容易理解，是不是也会被后面CSS用到？
 
-    class主要是方便CSS的使用，因为class是针对一类具有相似属性的html element的，所以可以用来表示它们的common的部分。所有的tag都可以被CSS使用，这个并不是我们使用span section div的原因
+   class主要是方便CSS的使用，因为class是针对一类具有相似属性的html element的，所以可以用来表示它们的common的部分。所有的tag都可以被CSS使用，这个并不是我们使用span section div的原因
 
 - 对于callback function，我始终有点无法理解。这些parameter 都是怎么传入callback function 里的呢，还有就是，callback function一定是等到所有操作都结束了才执行的么
 
