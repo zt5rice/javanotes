@@ -85,7 +85,7 @@
 
 ## <a name='html'>HTML</a>
 
-<details>
+- <details>
 <summary> Doctype作用？标准模式与兼容模式各有什么区别? </summary>
 
 		（1）、<!DOCTYPE>声明位于HTML文档中的第一行，处于 <html> 标签之前。告知浏览器的解析器用什么文档标准解析这个文档。DOCTYPE不存在或格式不正确会导致文档以兼容模式呈现。
