@@ -1,0 +1,13 @@
+# Github
+- Git Document 
+- Other versions of Github if you’re using older versions of Mac OS. Uninstall.sh first and then install the newest version. May need to update PATH. [Uninstall]
+- What is version control 
+- What is branch? 
+- What is repository? 
+- Difference between Merge and Rebase 
+- Push to upstream in command lines 
+- Difference between Maven, Ant and Gradle
+- Delete a branch
+- Difference between reset and checkout  (lose all version information or not)
+- Push a new branch to remote
+- What is VIM
