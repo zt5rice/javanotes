@@ -1951,7 +1951,7 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 <summary> 知道什么是webkit么? 知道怎么用浏览器的各种工具来调试和debug代码么?</summary>
 
 		Chrome,Safari浏览器内核。
-<details>
+</details>
 
 - 如何测试前端代码么? 知道BDD, TDD, Unit Test么? 知道怎么测试你的前端工程么(mocha, sinon, jasmin, qUnit..)?
 
