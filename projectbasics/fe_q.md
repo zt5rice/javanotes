@@ -363,10 +363,13 @@
 		（1）有两种， IE 盒子模型、W3C 盒子模型；
 		（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；
 		（3）区  别： IE的content部分把 border 和 padding计算了进去;
+
+
+
 </details>
 
-
-- CSS选择符有哪些？哪些属性可以继承？
+<details>
+<summary> CSS选择符有哪些？哪些属性可以继承？</summary>
 
 		*   1.id选择器（ # myid）
 			2.类选择器（.myclassname）
@@ -384,7 +387,10 @@
 
 
 
-- CSS优先级算法如何计算？
+</details>
+
+<details>
+<summary> CSS优先级算法如何计算？</summary>
 
 		*   优先级就近原则，同权重情况下样式定义最近者为准;
 		*   载入样式以最后载入的定位为准;
@@ -394,7 +400,10 @@
 			!important >  id > class > tag
 			important 比 内联优先级高
 
-- CSS3新增伪类有那些？
+</details>
+
+<details>
+<summary> CSS3新增伪类有那些？</summary>
 
 			举例：
 			p:first-of-type	选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
@@ -409,7 +418,10 @@
 			:disabled 		控制表单控件的禁用状态。
 			:checked        单选框或复选框被选中。
 
-- 如何居中div？
+</details>
+
+<details>
+<summary> 如何居中div？</summary>
 
 
 	*  水平居中：给div设置一个宽度，然后添加margin:0 auto属性
@@ -482,7 +494,10 @@
 			}
 
 
-- display有哪些值？说明他们的作用。
+</details>
+
+<details>
+<summary> display有哪些值？说明他们的作用。</summary>
 
 		  block       	块类型。默认宽度为父元素宽度，可设置宽高，换行显示。
 		  none        	元素不显示，并从文档流中移除。
@@ -493,7 +508,10 @@
 		  inherit     	规定应该从父元素继承 display 属性的值。
 
 
-- position的值relative和absolute定位原点是？
+</details>
+
+<details>
+<summary> position的值relative和absolute定位原点是？</summary>
 
 		  absolute
 			生成绝对定位的元素，相对于值不为 static的第一个父元素进行定位。
@@ -506,7 +524,10 @@
 		  inherit
 			规定从父元素继承 position 属性的值。
 
-- CSS3有哪些新特性？
+</details>
+
+<details>
+<summary> CSS3有哪些新特性？</summary>
 
 		  新增各种CSS选择器	（: not(.input)：所有 class 不是“input”的节点）
   		  圆角		    （border-radius:8px）
@@ -519,7 +540,10 @@
           缩放,定位,倾斜,动画,多背景
 		  例如:transform:\scale(0.85,0.90)\ translate(0px,-30px)\ skew(-9deg,0deg)\Animation:
 
-- 请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？
+</details>
+
+<details>
+<summary> 请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</summary>
 
 		 一个用于页面布局的全新CSS3功能，Flexbox可以把列表放在同一个方向（从上到下排列，从左到右），并让列表能延伸到占用可用的空间。
 		 较为复杂的布局还可以通过嵌套一个伸缩容器（flex container）来实现。
@@ -530,7 +554,10 @@
 
 		 具体：http://www.w3cplus.com/css3/flexbox-basics.html
 
-- 用纯CSS创建一个三角形的原理是什么？
+</details>
+
+<details>
+<summary> 用纯CSS创建一个三角形的原理是什么？</summary>
 
 		把上、左、右三条边隐藏掉（颜色设为 transparent）
 		#demo {
@@ -541,14 +568,20 @@
 		  border-color: transparent transparent red transparent;
 		}
 
-- 一个满屏 品 字布局 如何设计?
+</details>
+
+<details>
+<summary> 一个满屏 品 字布局 如何设计?</summary>
 
 		简单的方式：
 			上面的div宽100%，
 			下面的两个div分别宽50%，
 			然后用float或者inline使其不换行即可
 
-- css多列等高如何实现？
+</details>
+
+<details>
+<summary> css多列等高如何实现？</summary>
 
 		利用padding-bottom|margin-bottom正负值相抵；
 		设置父容器设置超出隐藏（overflow:hidden），这样子父容器的高度就还是它里面的列没有设定padding-bottom时的高度，
@@ -556,7 +589,10 @@
 		其他比这列矮的列会用它们的padding-bottom补偿这部分高度差。
 
 
-- 经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？
+</details>
+
+<details>
+<summary> 经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？</summary>
 
 	    * png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.
 
@@ -599,12 +635,18 @@
 	    L-V-H-A :  a:link {} a:visited {} a:hover {} a:active {}
 
 
-- li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？
+</details>
+
+<details>
+<summary> li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</summary>
 
 		行框的排列会受到中间空白（回车\空格）等的影响，因为空格也属于字符,这些空白也会被应用样式，占据空间，所以会有间隔，把字符大小设为0，就没有空格了。
 
 
-- 为什么要初始化CSS样式。
+</details>
+
+<details>
+<summary> 为什么要初始化CSS样式。</summary>
 
 		- 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。
 
@@ -630,7 +672,10 @@
 		table { border-collapse:collapse; border-spacing:0; }
 
 
-- absolute的containing block(容器块)计算方式跟正常流有什么不同？
+</details>
+
+<details>
+<summary> absolute的containing block(容器块)计算方式跟正常流有什么不同？</summary>
 
 		无论属于哪种，都要先找到其祖先元素中最近的 position 值不为 static 的元素，然后再判断：
 		1、若此元素为 inline 元素，则 containing block 为能够包含这个元素生成的第一个和最后一个 inline box 的 padding box (除 margin, border 外的区域) 的最小矩形；
@@ -642,23 +687,35 @@
 		2. absolute: 向上找最近的定位为absolute/relative的元素
 		3. fixed: 它的containing block一律为根元素(html/body)，根元素也是initial containing block
 
-- CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？
+</details>
+
+<details>
+<summary> CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</summary>
 
 	对于普通元素visibility:collapse;会将元素完全隐藏,不占据页面布局空间,与display:none;表现相同.
 	如果目标元素为table,visibility:collapse;将table隐藏,但是会占据页面布局空间.
 	仅在Firefox下起作用,IE会显示元素,Chrome会将元素隐藏,但是占据空间.
 
-- position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？
+</details>
+
+<details>
+<summary> position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</summary>
 
 	如果元素的display为none,那么元素不被渲染,position,float不起作用,如果元素拥有position:absolute;或者position:fixed;属性那么元素将为绝对定位,float不起作用.如果元素float属性不是none,元素会脱离文档流,根据float属性值来显示.有浮动,绝对定位,inline-block属性的元素,margin不会和垂直方向上的其他元素margin折叠.
 
-- 对BFC规范(块级格式化上下文：block formatting context)的理解？
+</details>
+
+<details>
+<summary> 对BFC规范(块级格式化上下文：block formatting context)的理解？</summary>
 
 		（W3C CSS 2.1 规范中的一个概念,它是一个独立容器，决定了元素如何对其内容进行定位,以及与其他元素的关系和相互作用。）
 		 一个页面是由很多个 Box 组成的,元素的类型和 display 属性,决定了这个 Box 的类型。
 		 不同类型的 Box,会参与不同的 Formatting Context（决定如何渲染文档的容器）,因此Box内的元素会以不同的方式渲染,也就是说BFC内部的元素和外部的元素不会互相影响。
 
-- css定义的权重
+</details>
+
+<details>
+<summary> css定义的权重</summary>
 
 		以下是权重的规则：标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：
 
@@ -684,7 +741,10 @@
 		如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现
 
 
-- 请解释一下为什么需要清除浮动？清除浮动的方式
+</details>
+
+<details>
+<summary> 请解释一下为什么需要清除浮动？清除浮动的方式</summary>
 
 	清除浮动是为了清除使用浮动元素产生的影响。浮动的元素，高度会塌陷，而高度的塌陷使我们页面后面的布局不能正常显示。
 
@@ -720,13 +780,19 @@
 
 		通过分析发现，除了clear：both用来闭合浮动的，其他代码无非都是为了隐藏掉content生成的内容，这也就是其他版本的闭合浮动为什么会有font-size：0，line-height：0。
 
-- 什么是外边距合并？
+</details>
+
+<details>
+<summary> 什么是外边距合并？</summary>
 
 		外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。
 		合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。
 		w3school介绍网址： http://www.w3school.com.cn/css/css_margin_collapsing.asp
 
-- zoom:1的清除浮动原理?
+</details>
+
+<details>
+<summary> zoom:1的清除浮动原理?</summary>
 
 		清除浮动，触发hasLayout；
 		Zoom属性是IE浏览器的专有属性，它可以设置或检索对象的缩放比例。解决ie下比较奇葩的bug。
@@ -740,7 +806,10 @@
 		目前非ie由于不支持这个属性，它们又是通过什么属性来实现元素的缩放呢？
 		可以通过css3里面的动画属性scale进行缩放。
 
-- 移动端的布局用过媒体查询吗？
+</details>
+
+<details>
+<summary> 移动端的布局用过媒体查询吗？</summary>
 
 
 	假设你现在正用一台显示设备来阅读这篇文章，同时你也想把它投影到屏幕上，或者打印出来，
@@ -766,12 +835,18 @@
 
 
 
-- 使用 CSS 预处理器吗？喜欢那个？
+</details>
+
+<details>
+<summary> 使用 CSS 预处理器吗？喜欢那个？</summary>
 
 		SASS (SASS、LESS没有本质区别，只因为团队前端都是用的SASS)
 
 
-- CSS优化、提高性能的方法有哪些？
+</details>
+
+<details>
+<summary> CSS优化、提高性能的方法有哪些？</summary>
 
 		关键选择器（key selector）。选择器的最后面的部分为关键选择器（即用来匹配目标元素的部分）；
 		如果规则拥有 ID 选择器作为其关键选择器，则不要为规则增加标签。过滤掉无关的规则（这样样式系统就不会浪费时间去匹配它们了）；
@@ -779,30 +854,54 @@
 		使用预处理工具或构建工具（gulp对css进行语法检查、自动补前缀、打包压缩、自动优雅降级）；
 
 
-- 浏览器是怎样解析CSS选择器的？
+</details>
+
+<details>
+<summary> 浏览器是怎样解析CSS选择器的？</summary>
 
 		样式系统从关键选择器开始匹配，然后左移查找规则选择器的祖先元素。
 		只要选择器的子树一直在工作，样式系统就会持续左移，直到和规则匹配，或者是因为不匹配而放弃该规则。
 
 
-- 在网页中的应该使用奇数还是偶数的字体？为什么呢？
+</details>
 
-- margin和padding分别适合什么场景使用？
+<details>
+<summary> 在网页中的应该使用奇数还是偶数的字体？为什么呢？</summary>
+
+</details>
+
+<details>
+<summary> margin和padding分别适合什么场景使用？</summary>
 
 		margin是用来隔开元素与元素的间距；padding是用来隔开元素与内容的间隔。
 		margin用于布局分开元素使元素与元素互不相干；
 		padding用于元素与内容之间的间隔，让内容（文字）与（包裹）元素之间有一段
 
 
-- 抽离样式模块怎么写，说出思路，有无实践经验？[阿里航旅的面试题]
+</details>
 
-- 元素竖向的百分比设定是相对于容器的高度吗？
+<details>
+<summary> 抽离样式模块怎么写，说出思路，有无实践经验？[阿里航旅的面试题]</summary>
 
-- 全屏滚动的原理是什么？用到了CSS的那些属性？
+</details>
 
-- 什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？
+<details>
+<summary> 元素竖向的百分比设定是相对于容器的高度吗？</summary>
 
-- 视差滚动效果，如何给每页做不同的动画？（回到顶部，向下滑动要再次出现，和只出现一次分别怎么做？）
+</details>
+
+<details>
+<summary> 全屏滚动的原理是什么？用到了CSS的那些属性？</summary>
+
+</details>
+
+<details>
+<summary> 什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</summary>
+
+</details>
+
+<details>
+<summary> 视差滚动效果，如何给每页做不同的动画？（回到顶部，向下滑动要再次出现，和只出现一次分别怎么做？）</summary>
 
 - ::before 和 :after中双冒号和单冒号 有什么区别？解释一下这2个伪元素的作用。
 
@@ -816,7 +915,10 @@
 		如果按堆栈视角，::after生成的内容会在::before生成的内容之上
 
 
-- 如何修改chrome记住密码后自动填充表单的黄色背景 ？
+</details>
+
+<details>
+<summary> 如何修改chrome记住密码后自动填充表单的黄色背景 ？</summary>
 
 		input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 		  background-color: rgb(250, 255, 189); /* #FAFFBD; */
@@ -826,48 +928,70 @@
 
 - 你对line-height是如何理解的？
 
-- 设置元素浮动后，该元素的display值是多少？
+<details>
+<summary> 设置元素浮动后，该元素的display值是多少？</summary>
 
 		自动变成了 display:block
 
-- 怎么让Chrome支持小于12px 的文字？
+</details>
+
+<details>
+<summary> 怎么让Chrome支持小于12px 的文字？</summary>
 
 		1、用图片：如果是内容固定不变情况下，使用将小于12px文字内容切出做图片，这样不影响兼容也不影响美观。
 		2、使用12px及12px以上字体大小：为了兼容各大主流浏览器，建议设计美工图时候设置大于或等于12px的字体大小，如果是接单的这个时候就需要给客户讲解小于12px浏览器不兼容等事宜。
 		3、继续使用小于12px字体大小样式设置：如果不考虑chrome可以不用考虑兼容，同时在设置小于12px对象设置-webkit-text-size-adjust:none，做到最大兼容考虑。
 		4、使用12px以上字体：为了兼容、为了代码更简单 从新考虑权重下兼容性。
 
-- 让页面里的字体变清晰，变细用CSS怎么做？
+</details>
+
+<details>
+<summary> 让页面里的字体变清晰，变细用CSS怎么做？</summary>
 
 		-webkit-font-smoothing: antialiased;
 
-- font-style属性可以让它赋值为“oblique” oblique是什么意思？
+</details>
+
+<details>
+<summary> font-style属性可以让它赋值为“oblique” oblique是什么意思？</summary>
 
 		倾斜的字体样式
 
-- position:fixed;在android下无效怎么处理？
+</details>
+
+<details>
+<summary> position:fixed;在android下无效怎么处理？</summary>
 
 		fixed的元素是相对整个页面固定位置的，你在屏幕上滑动只是在移动这个所谓的viewport，
 		原来的网页还好好的在那，fixed的内容也没有变过位置，
 		所以说并不是iOS不支持fixed，只是fixed的元素不是相对手机屏幕固定的。
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
 
-- 如果需要手动写动画，你认为最小时间间隔是多久，为什么？（阿里）
+</details>
+
+<details>
+<summary> 如果需要手动写动画，你认为最小时间间隔是多久，为什么？（阿里）</summary>
 
 		多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms
 
-- display:inline-block 什么时候会显示间隙？(携程)
+</details>
+
+<details>
+<summary> display:inline-block 什么时候会显示间隙？(携程)</summary>
 
 		移除空格、使用margin负值、使用font-size:0、letter-spacing、word-spacing
 
-- overflow: scroll时不能平滑滚动的问题怎么处理？
+</details>
+
+<details>
+<summary> overflow: scroll时不能平滑滚动的问题怎么处理？</summary>
 
 - 有一个高度自适应的div，里面有两个div，一个高度100px，希望另一个填满剩下的高度。
 
 - png、jpg、gif 这些图片格式解释一下，分别什么时候用。有没有了解过webp？
 
-
-- 什么是Cookie 隔离？（或者说：请求资源的时候不要让它带cookie怎么做）
+<details>
+<summary> 什么是Cookie 隔离？（或者说：请求资源的时候不要让它带cookie怎么做）</summary>
 
 		如果静态文件都放在主域名下，那静态文件请求的时候都带有的cookie的数据提交给server的，非常浪费流量，
 		所以不如隔离开。
@@ -877,7 +1001,7 @@
 
 		同时这种方式不会将cookie传入Web Server，也减少了Web Server对cookie的处理分析环节，
 		提高了webserver的http请求的解析速度。
-
+</details>
 
 - style标签写在body后与body前有什么区别？
 
