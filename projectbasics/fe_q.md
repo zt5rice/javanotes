@@ -1024,12 +1024,16 @@
 ## <a name='js'>JavaScript</a>
 
 
--  介绍js的基本数据类型。
+<details>
+<summary> 介绍js的基本数据类型。</summary>
 
 		 Undefined、Null、Boolean、Number、String、
 		 ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )
 
--  介绍js有哪些内置对象？
+</details>
+
+<details>
+<summary> 介绍js有哪些内置对象？</summary>
 
 		Object 是 JavaScript 中所有对象的父对象
 
@@ -1038,7 +1042,10 @@
 
 		参考：http://www.ibm.com/developerworks/cn/web/wa-objectsinjs-v1b/index.html
 
--  说几条写JavaScript的基本规范？
+</details>
+
+<details>
+<summary> 说几条写JavaScript的基本规范？ </summary>
 
 		1.不要在同一行声明多个变量。
 		2.请使用 ===/!==来比较true/false或者数值
@@ -1050,7 +1057,10 @@
 		8.If语句必须使用大括号
 		9.for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。
 
--  JavaScript原型，原型链 ? 有什么特点？
+</details>
+
+<details>
+<summary> JavaScript原型，原型链 ? 有什么特点？</summary>
 
 		每个对象都会在其内部初始化一个属性，就是prototype(原型)，当我们访问一个对象的属性时，
 		如果这个对象内部不存在这个属性，那么他就会去prototype里找这个属性，这个prototype又会有自己的prototype，
@@ -1077,7 +1087,10 @@
 
 
 
--  JavaScript有几种类型的值？，你能画一下他们的内存图吗？
+</details>
+
+<details>
+<summary> JavaScript有几种类型的值？，你能画一下他们的内存图吗？</summary>
 
 		栈：原始数据类型（Undefined，Null，Boolean，Number、String）
 		堆：引用数据类型（对象、数组和函数）
@@ -1088,12 +1101,18 @@
 
 	![Stated Clearly Image](http://www.w3school.com.cn/i/ct_js_value.gif)
 
-- 如何将字符串转化为数字，例如'12.3b'?
+</details>
+
+<details>
+<summary> 如何将字符串转化为数字，例如'12.3b'? </summary>
 
 		* parseFloat('12.3b');
 		* 正则表达式，'12.3b'.match(/(\d)+(\.)?(\d)+/g)[0] * 1, 但是这个不太靠谱，提供一种思路而已。
 
-- 如何将浮点数点左边的数每三位添加一个逗号，如12000000.11转化为『12,000,000.11』?
+</details>
+
+<details>
+<summary> 如何将浮点数点左边的数每三位添加一个逗号，如12000000.11转化为『12,000,000.11』?</summary>
 
 		function commafy(num){
 			return num && num
@@ -1103,7 +1122,10 @@
 				});
 		}
 
-- 如何实现数组的随机排序？
+</details>
+
+<details>
+<summary> 如何实现数组的随机排序？ </summary>
 
 		方法一：
 			var arr = [1,2,3,4,5,6,7,8,9,10];
@@ -1138,7 +1160,10 @@
 			})
 			console.log(arr);
 
--  Javascript如何实现继承？
+</details>
+
+<details>
+<summary> Javascript如何实现继承？</summary>
 
 		1、构造继承
 		2、原型继承
@@ -1164,7 +1189,10 @@
   - 参考：[构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance.html)，[非构造函数的继承](http://www.ruanyifeng.com/blog/2010/05/object-oriented_javascript_inheritance_continued.html)；
 
 
--  javascript创建对象的几种方式？
+</details>
+
+<details>
+<summary> javascript创建对象的几种方式？</summary>
 
 		javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。
 
@@ -1234,13 +1262,19 @@
 			var camry =new Car("凯美瑞",27);
 			camry.sell();
 
--  Javascript作用链域?
+</details>
+
+<details>
+<summary> Javascript作用链域?</summary>
 
 		全局函数无法查看局部函数的内部细节，但局部函数可以查看其上层的函数细节，直至全局细节。
 		当需要从局部函数查找某一属性或方法时，如果当前作用域没有找到，就会上溯到上层作用域查找，
 		直至全局函数，这种组织形式就是作用域链。
 
--  谈谈This对象的理解。
+</details>
+
+<details>
+<summary> 谈谈This对象的理解。</summary>
 
 	```
   	this总是指向函数的直接调用者（而非间接调用者）；
@@ -1248,18 +1282,27 @@
 	在事件中，this指向触发这个事件的对象，特殊的是，IE中的attachEvent中的this总是指向全局对象Window；
 	```
 
--  eval是做什么的？
+</details>
+
+<details>
+<summary> eval是做什么的？</summary>
 
 		它的功能是把对应的字符串解析成JS代码并运行；
 		应该避免使用eval，不安全，非常耗性能（2次，一次解析成js语句，一次执行）。
 		由JSON字符串转换为JSON对象的时候可以用eval，var obj =eval('('+ str +')');
 
--  什么是window对象? 什么是document对象?
+</details>
+
+<details>
+<summary> 什么是window对象? 什么是document对象?</summary>
 
 		window对象是指浏览器打开的窗口。
 		document对象是Documentd对象（HTML 文档对象）的一个只读引用，window对象的一个属性。
 
--  null，undefined 的区别？
+</details>
+
+<details>
+<summary> null，undefined 的区别？</summary>
 
 		null 		表示一个对象是“没有值”的值，也就是值为“空”；
 		undefined 	表示一个变量声明了没有初始化(赋值)；
@@ -1304,7 +1347,10 @@
 	参考阅读：[undefined与null的区别](http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html)
 
 
--  写一个通用的事件侦听器函数。
+</details>
+
+<details>
+<summary> 写一个通用的事件侦听器函数。</summary>
 
 			// event(事件)工具集，来源：github.com/markyun
 			markyun.Event = {
@@ -1384,7 +1430,10 @@
 				}
 			};
 
--  ["1", "2", "3"].map(parseInt) 答案是多少？
+</details>
+
+<details>
+<summary> ["1", "2", "3"].map(parseInt) 答案是多少？</summary>
 
 		parseInt() 函数能解析一个字符串，并返回一个整数，需要两个参数 (val, radix)，
 		其中 radix 表示要解析的数字的基数。【该值介于 2 ~ 36 之间，并且字符串中的数字不能大于radix才能正确返回数字结果值】;
@@ -1401,14 +1450,20 @@
 
 		详细解析：http://blog.csdn.net/justjavac/article/details/19473199
 
--  事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
+</details>
+
+<details>
+<summary> 事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？</summary>
 
 		 1. 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。
 		 2. 事件处理机制：IE是事件冒泡、Firefox同时支持两种事件模型，也就是：捕获型事件和冒泡型事件；
 		 3. ev.stopPropagation();（旧ie的方法 ev.cancelBubble = true;）
 
 
--  什么是闭包（closure），为什么要用它？
+</details>
+
+<details>
+<summary> 什么是闭包（closure），为什么要用它？</summary>
 
 		闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的局部变量,利用闭包可以突破作用链域，将函数内部的变量和方法传递到外部。
 
@@ -1457,7 +1512,10 @@
 		 sayAlert()//执行结果应该弹出的667
 
 
--  javascript 代码中的"use strict";是什么意思 ? 使用它区别是什么？
+</details>
+
+<details>
+<summary> javascript 代码中的"use strict";是什么意思 ? 使用它区别是什么？</summary>
 
 		use strict是一种ECMAscript 5 添加的（严格）运行模式,这种模式使得 Javascript 在更严格的条件下运行,
 
@@ -1470,14 +1528,20 @@
 		为未来新版本的Javascript标准化做铺垫。
 
 
--  如何判断一个对象是否属于某个类？
+</details>
+
+<details>
+<summary> 如何判断一个对象是否属于某个类？</summary>
 
  		  使用instanceof （待完善）
 	       if(a instanceof Person){
 	           alert('yes');
 	       }
 
--  new操作符具体干了什么呢?
+</details>
+
+<details>
+<summary> new操作符具体干了什么呢?</summary>
 
 			 1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
 	  	  	 2、属性和方法被加入到 this 引用的对象中。
@@ -1488,10 +1552,16 @@
 		Base.call(obj);
 
 
--  用原生JavaScript的实现过什么功能吗？
+</details>
+
+<details>
+<summary> 用原生JavaScript的实现过什么功能吗？</summary>
 
 
--  Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？
+</details>
+
+<details>
+<summary> Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？</summary>
 
 		hasOwnProperty
 
@@ -1503,7 +1573,10 @@
 
 		如果 object 具有指定名称的属性，那么JavaScript中hasOwnProperty函数方法返回 true，反之则返回 false。
 
--  JSON 的了解？
+</details>
+
+<details>
+<summary> JSON 的了解？</summary>
 
 		JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。
 		它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小
@@ -1517,16 +1590,20 @@
 		JSON对象转换为JSON字符串：
 		var last=obj.toJSONString();
 		var last=JSON.stringify(obj);
+</details>
 
 -  `[].forEach.call($$("*"),function(a){a.style.outline="1px solid #"+(~~(Math.random()*(1<<24))).toString(16)})` 能解释一下这段代码的意思吗？
 
-
--  js延迟加载的方式有哪些？
+<details>
+<summary> js延迟加载的方式有哪些？</summary>
 
 		defer和async、动态创建DOM方式（用得最多）、按需异步载入js
 
 
--  Ajax 是什么? 如何创建一个Ajax？
+</details>
+
+<details>
+<summary> Ajax 是什么? 如何创建一个Ajax？</summary>
 
 		ajax的全称：Asynchronous Javascript And XML。
 		异步传输+js+xml。
@@ -1539,7 +1616,10 @@
 		(5)获取异步调用返回的数据
 		(6)使用JavaScript和DOM实现局部刷新
 
-- Ajax 解决浏览器缓存问题？
+</details>
+
+<details>
+<summary> Ajax 解决浏览器缓存问题？</summary>
 
 		1、在ajax发送请求前加上 anyAjaxObj.setRequestHeader("If-Modified-Since","0")。
 
@@ -1551,7 +1631,10 @@
 
         5、如果是使用jQuery，直接这样就可以了 $.ajaxSetup({cache:false})。这样页面的所有ajax都会执行这条语句就是不需要保存缓存记录。
 
--  同步和异步的区别?
+</details>
+
+<details>
+<summary> 同步和异步的区别?</summary>
 
 	同步的概念应该是来自于OS中关于同步的概念:不同进程为协同完成某项工作而在先后次序上调整(通过阻塞,唤醒等方式).同步强调的是顺序性.谁先谁后.异步则不存在这种顺序性.
 
@@ -1565,18 +1648,27 @@
 
 	（待完善）
 
--  如何解决跨域问题?
+</details>
+
+<details>
+<summary> 如何解决跨域问题?</summary>
 
 		jsonp、 iframe、window.name、window.postMessage、服务器上设置代理页面
+</details>
 
 -  页面编码和被请求的资源编码如果不一致如何处理？
 
--  服务器代理转发时，该如何处理cookie？
+
+<details>
+<summary> 服务器代理转发时，该如何处理cookie？</summary>
 
 		nginx
 
 
--  模块化开发怎么做？
+</details>
+
+<details>
+<summary> 模块化开发怎么做？</summary>
 
 	 [ 立即执行函数](http://benalman.com/news/2010/11/immediately-invoked-function-expression/),不暴露私有成员
 
@@ -1596,7 +1688,10 @@
 
 	（待完善）
 
--  AMD（Modules/Asynchronous-Definition）、CMD（Common Module Definition）规范区别？
+</details>
+
+<details>
+<summary> AMD（Modules/Asynchronous-Definition）、CMD（Common Module Definition）规范区别？</summary>
 
 	> AMD 规范在这里：https://github.com/amdjs/amdjs-api/wiki/AMD
 
@@ -1628,10 +1723,14 @@
 		})
 
 
--  requireJS的核心原理是什么？（如何动态加载的？如何避免多次加载的？如何
-缓存的？）
+</details>
+
+<details>
+<summary> requireJS的核心原理是什么？（如何动态加载的？如何避免多次加载的？如何
+缓存的？）</summary>
 
 		参考：http://annn.me/how-to-realize-cmd-loader/
+</details>
 
 -  JS模块加载器的轮子怎么造，也就是如何实现一个模块加载器？
 
@@ -1639,7 +1738,8 @@
 
 -  ECMAScript6 怎么写class么，为什么会出现class这种东西?
 
--  异步加载JS的方式有哪些？
+<details>
+<summary> 异步加载JS的方式有哪些？</summary>
 
 	      (1) defer，只支持IE
 
@@ -1647,13 +1747,19 @@
 
 	      (3) 创建script，插入到DOM中，加载完毕后callBack
 
-- documen.write和 innerHTML的区别
+</details>
+
+<details>
+<summary> documen.write和 innerHTML的区别</summary>
 
 		document.write只能重绘整个页面
 
 		innerHTML可以重绘页面的一部分
 
-- DOM操作——怎样添加、移除、移动、复制、创建和查找节点?
+</details>
+
+<details>
+<summary> DOM操作——怎样添加、移除、移动、复制、创建和查找节点?</summary>
 
 		（1）创建新节点
 		  createDocumentFragment()    //创建一个DOM片段
@@ -1669,7 +1775,10 @@
 		  getElementsByName()    //通过元素的Name属性的值(IE容错能力较强，会得到一个数组，其中包括id等于name值的)
 		  getElementById()    //通过元素Id，唯一性
 
--  .call() 和 .apply() 的区别？
+</details>
+
+<details>
+<summary> .call() 和 .apply() 的区别？</summary>
 
 
 		  例子中用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4);
@@ -1687,7 +1796,7 @@
 			}
 
 			add.call(sub,3,1);
-
+</details>
 
 
 -  数组和对象有哪些原生方法，列举一下？
@@ -1708,14 +1817,17 @@
 
 -  jQuery 的属性拷贝(extend)的实现原理是什么，如何实现深拷贝？
 
--  jquery.extend 与 jquery.fn.extend的区别？
+
+
+<details>
+<summary>jquery.extend 与 jquery.fn.extend的区别？ </summary>
 
 		* jquery.extend 为jquery类添加类方法，可以理解为添加静态方法
 		* jquery.fn.extend:
 			源码中jquery.fn = jquery.prototype，所以对jquery.fn的扩展，就是为jquery类添加成员函数
 		使用：
 		jquery.extend扩展，需要通过jquery类来调用，而jquery.fn.extend扩展，所有jquery实例都可以直接调用。
-
+</details>
 
 -  jQuery 的队列是如何实现的？队列可以用在哪些地方？
 
@@ -1729,18 +1841,20 @@
 
 -  针对 jQuery性能的优化方法？
 
--  Jquery与jQuery UI 有啥区别？
+<details>
+<summary>Jquery与jQuery UI 有啥区别？</summary>
 
 
 		*jQuery是一个js库，主要提供的功能是选择器，属性修改和事件绑定等等。
 
 		*jQuery UI则是在jQuery的基础上，利用jQuery的扩展性，设计的插件。
          提供了一些常用的界面元素，诸如对话框、拖动行为、改变大小行为等等
-
+</details>
 
 -  JQuery的源码看过吗？能不能简单说一下它的实现原理？
 
--  jquery 中如何将数组转化为json字符串，然后再转化回来？
+<details>
+<summary>jquery 中如何将数组转化为json字符串，然后再转化回来？</summary>
 
 jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩展：
 
@@ -1754,10 +1868,12 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 		然后调用：
 		$("").stringifyArray(array)
+</details>
 
 -  jQuery和Zepto的区别？各自的使用场景？
 
--  针对 jQuery 的优化方法？
+<details>
+<summary> 针对 jQuery 的优化方法？</summary>
 
 		*基于Class的选择性的性能相对于Id选择器开销很大，因为需遍历所有DOM元素。
 
@@ -1767,7 +1883,7 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		*for (var i = size; i < arr.length; i++) {}
          for 循环每一次循环都查找了数组 (arr) 的.length 属性，在开始循环的时候设置一个变量来存储这个数字，可以让循环跑得更快：
          for (var i = size, length = arr.length; i < length; i++) {}
-
+</details>
 
 
 -  Zepto的点透问题如何解决？
@@ -1776,11 +1892,13 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 -  需求：实现一个页面操作不会整页刷新的网站，并且能在浏览器前进、后退时正确响应。给出你的技术实现方案？
 
-- 如何判断当前脚本运行在浏览器还是node环境中？（阿里）
+<details>
+<summary> 如何判断当前脚本运行在浏览器还是node环境中？（阿里）</summary>
 
 		this === window ? 'browser' : 'node';
 
 		通过判断Global对象是否为window，如果不为window，当前脚本没有运行在浏览器中
+</details>
 
 -  移动端最小触控区域是多大？
 
@@ -1798,7 +1916,8 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 -  解释JavaScript中的作用域与变量声明提升？
 
--  那些操作会造成内存泄漏？
+<details>
+<summary> 那些操作会造成内存泄漏？</summary>
 
 	    内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。
         垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。
@@ -1806,7 +1925,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
         setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
 		闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
 
--  JQuery一个对象可以同时绑定多个事件，这是如何实现的？
+</details>
+
+<details>
+<summary> JQuery一个对象可以同时绑定多个事件，这是如何实现的？</summary>
 
 		* 多个事件同一个函数：
 			$("div").on("click mouseover", function(){});
@@ -1815,6 +1937,7 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 				click: function(){},
 				mouseover: function(){}
 			});
+</details>
 
 -  Node.js的适用场景？
 
@@ -1824,9 +1947,11 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 - 什么是“前端路由”?什么时候适合使用“前端路由”? “前端路由”有哪些优点和缺点?
 
-- 知道什么是webkit么? 知道怎么用浏览器的各种工具来调试和debug代码么?
+<details>
+<summary> 知道什么是webkit么? 知道怎么用浏览器的各种工具来调试和debug代码么?</summary>
 
 		Chrome,Safari浏览器内核。
+<details>
 
 - 如何测试前端代码么? 知道BDD, TDD, Unit Test么? 知道怎么测试你的前端工程么(mocha, sinon, jasmin, qUnit..)?
 
@@ -1836,7 +1961,8 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 - 简述一下 Handlerbars 的对模板的基本处理流程， 如何编译的？如何缓存的？
 
-- 用js实现千位分隔符?(来源：[前端农民工](http://div.io/topic/744)，提示：正则+replace)
+<details>
+<summary> 用js实现千位分隔符?(来源：[前端农民工](http://div.io/topic/744)，提示：正则+replace)</summary>
 
 
 		参考：http://www.tuicool.com/articles/ArQZfui
@@ -1851,7 +1977,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 
 
-- 检测浏览器版本版本有哪些方式？
+</details>
+
+<details>
+<summary> 检测浏览器版本版本有哪些方式？</summary>
 
 		功能检测、userAgent特征检测
 
@@ -1860,21 +1989,29 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		  (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
 
 
-- What is a Polyfill?
+</details>
+
+<details>
+<summary> What is a Polyfill?</summary>
 
 		polyfill 是“在旧版浏览器上复制标准 API 的 JavaScript 补充”,可以动态地加载 JavaScript 代码或库，在不支持这些标准 API 的浏览器中模拟它们。
 		例如，geolocation（地理位置）polyfill 可以在 navigator 对象上添加全局的 geolocation 对象，还能添加 getCurrentPosition 函数以及“坐标”回调对象，
 		所有这些都是 W3C 地理位置 API 定义的对象和函数。因为 polyfill 模拟标准 API，所以能够以一种面向所有浏览器未来的方式针对这些 API 进行开发，
 		一旦对这些 API 的支持变成绝对大多数，则可以方便地去掉 polyfill，无需做任何额外工作。
 
-- 做的项目中，有没有用过或自己实现一些 polyfill 方案（兼容性处理方案）？
+</details>
+
+<details>
+<summary> 做的项目中，有没有用过或自己实现一些 polyfill 方案（兼容性处理方案）？</summary>
 
 		比如： html5shiv、Geolocation、Placeholder
+</details>
 
 - 我们给一个dom同时绑定两个点击事件，一个用捕获，一个用冒泡。会执行几次事件，会先执行冒泡还是捕获？
 
 
-- 使用JS实现获取文件扩展名？
+<details>
+<summary> 使用JS实现获取文件扩展名？</summary>
 
 		function getFileExtension(filename) {
 		  return filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
@@ -1884,7 +2021,10 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		对于'filename'和'.hiddenfile'，lastIndexOf的返回值分别为0和-1无符号右移操作符(»>) 将-1转换为4294967295，将-2转换为4294967294，这个方法可以保证边缘情况时文件名不变。
 		String.prototype.slice() 从上面计算的索引处提取文件的扩展名。如果索引比文件名的长度大，结果为""。
 
-- Webpack热更新实现原理?
+</details>
+
+<details>
+<summary> Webpack热更新实现原理?</summary>
 
 		1. Webpack编译期，为需要热更新的 entry 注入热更新代码(EventSource通信)
 		2. 页面首次打开后，服务端与客户端通过 EventSource 建立通信渠道，把下一次的 hash 返回前端
@@ -1892,6 +2032,8 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 		4. 修改页面代码后，Webpack 监听到文件修改后，开始编译，编译完成后，发送 build 消息给客户端
 		5. 客户端获取到hash，成功后客户端构造hot-update.js script链接，然后插入主文档
 		6. hot-update.js 插入成功后，执行hotAPI 的 createRecord 和 reload方法，获取到 Vue 组件的 render方法，重新 render 组件， 继而实现 UI 无刷新更新。
+
+</details>
 
 - 请介绍一下JS之事件节流？
 
