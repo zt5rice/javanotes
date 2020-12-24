@@ -15,7 +15,7 @@
 
     这个看你的project的需求了，如果不需要支持老的浏览器，用flex就可以了（flex box还可以帮助处理居中等问题）
 
-Class 属性的作用是不是为了让developer更容易理解，然后后面CSS也可以方便对这一部分进行处理？ 还有 span section div这样的tag除了读起来容易理解，是不是也会被后面CSS用到？
+- Class 属性的作用是不是为了让developer更容易理解，然后后面CSS也可以方便对这一部分进行处理？ 还有 span section div这样的tag除了读起来容易理解，是不是也会被后面CSS用到？
 
    class主要是方便CSS的使用，因为class是针对一类具有相似属性的html element的，所以可以用来表示它们的common的部分。所有的tag都可以被CSS使用，这个并不是我们使用span section div的原因
 
@@ -23,19 +23,19 @@ Class 属性的作用是不是为了让developer更容易理解，然后后面CS
 
     $.get是jquery提供的一个用来发get ajax request的function. 它的内部实现还是使用XMLHttpRequest来做的。这里我们传的第一个参数是URL，第二个参数是function，jquery的$.get给你的保证是你在第二个parameter传给它的function会在request成功之后被call并且被传入Response object里面的data。注意这里data并不是$.get的parameter而是它第二个parameter(a function)的parameter。
 
-课上很多地方用到了AJAX，但是关于AJAX到底是什么，我非常模糊，也解释不清楚。 AJAX只是针对java script 和 xml的吗？
+- 课上很多地方用到了AJAX，但是关于AJAX到底是什么，我非常模糊，也解释不清楚。 AJAX只是针对java script 和 xml的吗？
 
     先看一下科普页 Wiki https://en.wikipedia.org/wiki/Ajax_(programming) 这个知识点的核心不在于是用JS或是XML而是要理解asynchronous和synchronize HTTP request的区别。同时掌握通过XMLHttpRequest这个global object发送和接收asynchronous HTTP request的方式。具体的code可以参照我们第一个recommendation项目或者下面的Mozilla官方的页面. XMLHttpRequest https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
 
-感觉完全可以用constructor进行初始化为什么还要用static initializer呢？
+- 感觉完全可以用constructor进行初始化为什么还要用static initializer呢？
 
     Static initializer 用来初始化 static member，而且执行不需要创建对象。如果你的 class 没有实例化对象的话就需要用 static initializer 来初始化 static members 或者在 class loading 的时候执行一些操作。在我们的课程里主要在 JDBC 的实现时使用 static initializer，因为我们没有创建 JDBC class 的 object，而是利用 JDBC 的 static initializer 来注册数据库的驱动。
 
-请问下什么样的场景需要用到jQuery这个JS library？
+- 请问下什么样的场景需要用到jQuery这个JS library？
 
     JQuery比较常用的场合是需要做DOM manipulation和发Ajax request的时候。
 
--我们从api中获取了event的所有数据为啥不直接传到前端或者存到数据库，要这个item 类到底是干嘛的
+- 我们从api中获取了event的所有数据为啥不直接传到前端或者存到数据库，要这个item 类到底是干嘛的
 
     首先前端不需要你所有的数据，如果全部都传过去前端的load很大会影响latency其次你也不能整个存数据库，一样的道理有些数据对我们来说没有用的
 
