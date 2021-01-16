@@ -21,15 +21,22 @@
 </table>
 </details>
 
-1.2. 什么是 Spring Framework？
+<details>
+<summary> 1.2. 什么是 Spring Framework？ </summary>
+<ul>
+    <li>Spring 是一个开源应用框架，旨在降低应用程序开发的复杂度。<\li>
+    <li>它是轻量级、松散耦合的。<\li>
+    <li>它具有分层体系结构，允许用户选择组件，同时还为 J2EE 应用程序开发提供了一个有凝聚力的框架。<\li>
+    <li>它可以集成其他框架，如 Structs、Hibernate、EJB 等，所以又称为框架的框架。<\li>
+</ul>
+</details>
 
-Spring 是一个开源应用框架，旨在降低应用程序开发的复杂度。
 
-它是轻量级、松散耦合的。
 
-它具有分层体系结构，允许用户选择组件，同时还为 J2EE 应用程序开发提供了一个有凝聚力的框架。
 
-它可以集成其他框架，如 Structs、Hibernate、EJB 等，所以又称为框架的框架。
+<details>
+<summary> </summary>
+</details>
 
 1.3. 列举 Spring Framework 的优点。
 
@@ -40,6 +47,10 @@ Spring Framework 支持 POJO(Plain Old Java Object) 编程，从而具备持续�
 由于依赖注入和控制反转，JDBC 得以简化。
 
 它是开源免费的。
+
+<details>
+<summary> </summary>
+</details>
 
 1.4. Spring Framework 有哪些不同的功能？
 
@@ -56,6 +67,11 @@ MVC - 对 web 应用提供了高度可配置性，其他框架的集成也十分
 事务管理 - 提供了用于事务管理的通用抽象层。Spring 的事务支持也可用于容器较少的环境。
 
 JDBC 异常 - Spring 的 JDBC 抽象层提供了一个异常层次结构，简化了错误处理策略。
+
+<details>
+<summary> </summary>
+</details>
+
 
 1.5. Spring Framework 中有多少个模块，它们分别是什么？
 
@@ -89,9 +105,20 @@ Test – 该层为使用 JUnit 和 TestNG 进行测试提供支持。
 
 Messaging – 该模块为 STOMP 提供支持。它还支持注解编程模型，该模型用于从 WebSocket 客户端路由和处理 STOMP 消息
 Aspects – 该模块为与 AspectJ 的集成提供支持。
+
+<details>
+<summary> </summary>
+</details>
+
+
 1.6. 什么是 Spring 配置文件？
 
 Spring 配置文件是 XML 文件。该文件主要包含类信息。它描述了这些类是如何配置以及相互引入的。但是，XML 配置文件冗长且更加干净。如果没有正确规划和编写，那么在大项目中管理变得非常困难。
+
+
+<details>
+<summary> </summary>
+</details>
 
 1.7. Spring 应用程序有哪些不同组件？
 
@@ -106,6 +133,10 @@ Spring 面向切面编程（AOP） - 提供面向切面编程的功能。
 Bean 配置文件 - 包含类的信息以及如何配置它们。
 
 用户程序 - 它使用接口。
+
+<details>
+<summary> </summary>
+</details>
 
 1.8. 使用 Spring 有哪些方式？
 
