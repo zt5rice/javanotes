@@ -35,18 +35,18 @@
 
 
 <details>
-<summary> </summary>
+<summary>1.3. 列举 Spring Framework 的优点。 </summary>
+<ul>
+    <li>由于 Spring Frameworks 的分层架构，用户可以自由选择自己需要的组件。
+    <li>Spring Framework 支持 POJO(Plain Old Java Object) 编程，从而具备持续集成和可测试性。
+    <li>由于依赖注入和控制反转，JDBC 得以简化。
+    <li>它是开源免费的。
+</ul>
 </details>
 
-1.3. 列举 Spring Framework 的优点。
 
-由于 Spring Frameworks 的分层架构，用户可以自由选择自己需要的组件。
 
-Spring Framework 支持 POJO(Plain Old Java Object) 编程，从而具备持续集成和可测试性。
 
-由于依赖注入和控制反转，JDBC 得以简化。
-
-它是开源免费的。
 
 <details>
 <summary> </summary>
