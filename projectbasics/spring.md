@@ -24,10 +24,10 @@
 <details>
 <summary> 1.2. 什么是 Spring Framework？ </summary>
 <ul>
-    <li>Spring 是一个开源应用框架，旨在降低应用程序开发的复杂度。</li>
+    <li>Spring 是一个开源应用框架，旨在降低应用程序开发的复杂度。 </li>
     <li>它是轻量级、松散耦合的。</li>
-    <li>它具有分层体系结构，允许用户选择组件，同时还为 J2EE 应用程序开发提供了一个有凝聚力的框架。</li>
-    <li>它可以集成其他框架，如 Structs、Hibernate、EJB 等，所以又称为框架的框架。</li>
+    <li>它具有分层体系结构，允许用户选择组件，同时还为 J2EE 应用程序开发提供了一个有凝聚力的框架。 </li>
+    <li>它可以集成其他框架，如 Structs、Hibernate、EJB 等，所以又称为框架的框架。 </li>
 </ul>
 </details>
 
