@@ -49,32 +49,22 @@
 
 
 <details>
-<summary> </summary>
+<summary>1.4. Spring Framework 有哪些不同的功能？ </summary>
+<ul>
+    <li>轻量级 - Spring 在代码量和透明度方面都很轻便。</li>
+    <li>IOC - 控制反转</li>
+    <li>AOP - 面向切面编程可以将应用业务逻辑和系统服务分离，以实现高内聚。</li>
+    <li>容器 - Spring 负责创建和管理对象（Bean）的生命周期和配置。</li>
+    <li>MVC - 对 web 应用提供了高度可配置性，其他框架的集成也十分方便。</li>
+    <li>事务管理 - 提供了用于事务管理的通用抽象层。Spring 的事务支持也可用于容器较少的环境。
+</li>
+    <li>JDBC 异常 - Spring 的 JDBC 抽象层提供了一个异常层次结构，简化了错误处理策略。
+</li>
+</ul>
 </details>
-
-1.4. Spring Framework 有哪些不同的功能？
-
-轻量级 - Spring 在代码量和透明度方面都很轻便。
-
-IOC - 控制反转
-
-AOP - 面向切面编程可以将应用业务逻辑和系统服务分离，以实现高内聚。
-
-容器 - Spring 负责创建和管理对象（Bean）的生命周期和配置。
-
-MVC - 对 web 应用提供了高度可配置性，其他框架的集成也十分方便。
-
-事务管理 - 提供了用于事务管理的通用抽象层。Spring 的事务支持也可用于容器较少的环境。
-
-JDBC 异常 - Spring 的 JDBC 抽象层提供了一个异常层次结构，简化了错误处理策略。
 
 <details>
-<summary> </summary>
-</details>
-
-
-1.5. Spring Framework 中有多少个模块，它们分别是什么？
-
+<summary>1.5. Spring Framework 中有多少个模块，它们分别是什么？ </summary>
 Image
 Spring 核心容器 – 该层基本上是 Spring Framework 的核心。它包含以下模块：
 
@@ -105,50 +95,59 @@ Test – 该层为使用 JUnit 和 TestNG 进行测试提供支持。
 
 Messaging – 该模块为 STOMP 提供支持。它还支持注解编程模型，该模型用于从 WebSocket 客户端路由和处理 STOMP 消息
 Aspects – 该模块为与 AspectJ 的集成提供支持。
-
-<details>
-<summary> </summary>
 </details>
 
 
-1.6. 什么是 Spring 配置文件？
 
+
+
+
+<details>
+<summary>1.6. 什么是 Spring 配置文件？ </summary>
 Spring 配置文件是 XML 文件。该文件主要包含类信息。它描述了这些类是如何配置以及相互引入的。但是，XML 配置文件冗长且更加干净。如果没有正确规划和编写，那么在大项目中管理变得非常困难。
+</details>
+
+
+
+
 
 
 <details>
-<summary> </summary>
+<summary>1.7. Spring 应用程序有哪些不同组件？ </summary>
+<ul> Spring 应用一般有以下组件：
+    <li>接口 - 定义功能。</li>
+    <li>Bean 类 - 它包含属性，setter 和 getter 方法，函数等。</li>
+    <li>Spring 面向切面编程（AOP） - 提供面向切面编程的功能。</li>
+    <li>Bean 配置文件 - 包含类的信息以及如何配置它们。</li>
+    <li>用户程序 - 它使用接口。</li>
+</ul>
 </details>
 
-1.7. Spring 应用程序有哪些不同组件？
 
-Spring 应用一般有以下组件：
 
-接口 - 定义功能。
 
-Bean 类 - 它包含属性，setter 和 getter 方法，函数等。
-
-Spring 面向切面编程（AOP） - 提供面向切面编程的功能。
-
-Bean 配置文件 - 包含类的信息以及如何配置它们。
-
-用户程序 - 它使用接口。
 
 <details>
-<summary> </summary>
+<summary>1.8. 使用 Spring 有哪些方式？ </summary>
+<ul> 使用 Spring 有以下方式：
+    <li>作为一个成熟的 Spring Web 应用程序。</li>
+    <li>作为第三方 Web 框架，使用 Spring Frameworks 中间层。</li>
+    <li>用于远程使用。</li>
+    <li>作为企业级 Java Bean，它可以包装现有的 POJO（Plain Old Java Objects）。
+</li>
+</ul>
 </details>
 
-1.8. 使用 Spring 有哪些方式？
 
-使用 Spring 有以下方式：
 
-作为一个成熟的 Spring Web 应用程序。
-作为第三方 Web 框架，使用 Spring Frameworks 中间层。
-用于远程使用。
-作为企业级 Java Bean，它可以包装现有的 POJO（Plain Old Java Objects）。
 
 
 # 2、依赖注入（Ioc）
+
+<details>
+<summary> </summary>
+</details>
+
 2.1. 什么是 Spring IOC 容器？
 
 Spring 框架的核心是 Spring 容器。容器创建对象，将它们装配在一起，配置它们并管理它们的完整生命周期。Spring 容器使用依赖注入来管理组成应用程序的组件。
@@ -157,9 +156,20 @@ Spring 框架的核心是 Spring 容器。容器创建对象，将它们装配�
 
 Image
 img
+
+<details>
+<summary> </summary>
+</details>
+
+
 2.2. 什么是依赖注入？
 
 在依赖注入中，您不必创建对象，但必须描述如何创建它们。您不是直接在代码中将组件和服务连接在一起，而是描述配置文件中哪些组件需要哪些服务。由 IoC 容器将它们装配在一起。
+
+<details>
+<summary> </summary>
+</details>
+
 
 2.3. 可以通过多少种方式完成依赖注入？
 
@@ -170,6 +180,11 @@ setter 注入
 接口注入
 在 Spring Framework 中，仅使用构造函数和 setter 注入。
 
+<details>
+<summary> </summary>
+</details>
+
+
 2.4. 区分构造函数注入和 setter 注入。
 
 构造函数注入	setter 注入
@@ -177,10 +192,21 @@ setter 注入
 不会覆盖 setter 属性	会覆盖 setter 属性
 任意修改都会创建一个新实例	任意修改不会创建一个新实例
 适用于设置很多属性	适用于设置少量属性
+
+<details>
+<summary> </summary>
+</details>
+
+
 2.5. spring 中有多少种 IOC 容器？
 
 BeanFactory - BeanFactory 就像一个包含 bean 集合的工厂类。它会在客户端要求时实例化 bean。
 ApplicationContext - ApplicationContext 接口扩展了 BeanFactory 接口。它在 BeanFactory 基础上提供了一些额外的功能。
+
+<details>
+<summary> </summary>
+</details>
+
 2.6. 区分 BeanFactory 和 ApplicationContext。
 
 BeanFactory	ApplicationContext
@@ -188,6 +214,12 @@ BeanFactory	ApplicationContext
 它使用语法显式提供资源对象	它自己创建和管理资源对象
 不支持国际化	支持国际化
 不支持基于依赖的注解	支持基于依赖的注解
+
+<details>
+<summary> </summary>
+</details>
+
+
 2.7. 列举 IoC 的一些好处。
 
 IoC 的一些好处是：
@@ -196,6 +228,11 @@ IoC 的一些好处是：
 它将使您的应用程序易于测试，因为它不需要单元测试用例中的任何单例或 JNDI 查找机制。
 它以最小的影响和最少的侵入机制促进松耦合。
 它支持即时的实例化和延迟加载服务。
+
+<details>
+<summary> </summary>
+</details>
+
 2.8. Spring IoC 的实现机制。
 
 Spring 中的 IoC 的实现原理就是工厂模式加反射机制。
