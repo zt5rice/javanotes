@@ -1,10 +1,6 @@
 # Jupiter Summary
 
 <details>
-<summary></summary>
-</details>
-
-<details>
 <summary>What is JavaEE, Servlet, Tomcat and how do you use them? </summary>
 <ul>
     <li>The Java EE platform is built on top of the Java SE platform. The Java EE platform provides an API and runtime environment for developing and running large-scale, multi-tiered, reliable, and secure network applications. 
@@ -17,24 +13,30 @@
 
 <details>
 <summary>What’s the RESTful API and what’s the benefit of REST?</summary>
-Resource representational state transfer(REST) is an architectural approach to designing web services. 
+    <ul>Resource representational state transfer(REST) is an architectural approach to designing web services. 
+</ul>
 </details>
 
 
 <details>
 <summary>RESTful API satisfies the following few requirements:</summary>
-A resource has an identifier, which is a URL that uniquely identifies that resource. For example http://localhost:8080/jupiter/history?user_id=1111
-REST APIs built on HTTP, the uniform interface includes using standard HTTP verbs to perform operations on resources. The most common operations are GET, POST, PUT, PATCH, and DELETE.
-REST APIs use a stateless request model. HTTP requests should be independent and may occur in any order, so keeping transient state information between requests is not feasible
+<ul>
+    <li>A resource has an identifier, which is a URL that uniquely identifies that resource. For example http://localhost:8080/jupiter/history?user_id=1111</li>
+    <li>REST APIs built on HTTP, the uniform interface includes using standard HTTP verbs to perform operations on resources. The most common operations are GET, POST, PUT, PATCH, and DELETE.</li>
+    <li>REST APIs use a stateless request model. HTTP requests should be independent and may occur in any order, so keeping transient state information between requests is not feasible</li>
+</ul>
 </details>
 
 
 <details>
 <summary>Benefits of REST</summary>
 <ul>
-Operations are directly based on HTTP methods, so that server doesn’t need to parse extra thing
-URL clearly indicates which resources a client wants, easy for clients to understand.
-The server is running in stateless mode, improving scalability.
+    <li>Operations are directly based on HTTP methods, so that server doesn’t need to parse extra thing
+</li>
+    <li>URL clearly indicates which resources a client wants, easy for clients to understand.
+</li>
+    <li>The server is running in stateless mode, improving scalability.
+</li>
 </ul>
 </details>
 
@@ -42,14 +44,21 @@ The server is running in stateless mode, improving scalability.
 
 <details>
 <summary>What's the builder pattern and why/how do you use the builder pattern?</summary>
-The builder pattern is a creational pattern for solving a problem of how can a class (the same construction process) create different representations of a complex object. The builder pattern has a nested static builder class to build the object step-by-step and provide a method that will actually return the object. The builder pattern is to deal with constructors that require too many parameters. Also, it can make sure the object is immutable. For example, in our project, our Item class has many different attributes and thus we use a builder pattern.
-How do you use MySQL
-I used Amazon's Relational Database Service to store my data. It’s easy to set up and scale. I created 4 tables(Items, Users, Keywords, History)
-Content-based vs. User-based vs. Item-based recommendation
-What’s the difference between (Content-based, User-based, Item-based) recommendation?
-Content-based is to recommend items to users with similar attributes of an item like price, category, etc. User-based calculates the similarity of users based on their behavior, not on their attributes. Users are similar because they take the same action to the same items. Item-based is similar to user-based but based on the similarity of items, and the similarity calculation is also based on user behavior.
+<ul>The builder pattern is a creational pattern for solving a problem of how can a class (the same construction process) create different representations of a complex object. The builder pattern has a nested static builder class to build the object step-by-step and provide a method that will actually return the object. The builder pattern is to deal with constructors that require too many parameters. Also, it can make sure the object is immutable. For example, in our project, our Item class has many different attributes and thus we use a builder pattern.</ul>
 </details>
 
+<details>
+<summary>How do you use MySQL</summary>
+    <ul>I used Amazon's Relational Database Service to store my data. It’s easy to set up and scale. I created 4 tables(Items, Users, Keywords, History)</ul>
+</details>
+
+ 
+ <details>
+ <summary>What’s the difference between (Content-based, User-based, Item-based) recommendation?</summary>
+    <ul>Content-based is to recommend items to users with similar attributes of an item like price, category, etc. User-based calculates the similarity of users based on their behavior, not on their attributes. Users are similar because they take the same action to the same items. Item-based is similar to user-based but based on the similarity of items, and the similarity calculation is also based on user behavior.</ul>
+ </details>
+ 
+     
 
 <details>
 <summary>What is a session?</summary>
