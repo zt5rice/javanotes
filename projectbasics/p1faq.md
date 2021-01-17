@@ -1,6 +1,37 @@
 # Jupiter Summary
 
 <details>
+<summary>Tell me something about your job recommendation system. </summary>
+<ul>
+<li>Create Java servlet with RESTful APIs to handle HTTP request and response</li>
+<li>Build MySQL database on Amazon RDS to store position data from Github</li>
+<li>Design algorithms to improve job recommendation</li>
+<li>Deploy server to Amazon EC2 to handle 150 qps tested by Apache JMeter</li>
+</ul>
+</details>
+
+<details>
+<summary>Why do you design such system? </summary>
+<ul>
+</ul>
+</details>
+
+<details>
+<summary>What is Amazon EC2? Advantages? Why you use it? </summary>
+<ul>
+<li>Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. </li>
+</ul>
+</details>
+
+<details>
+<summary>What is Apache JMeter? Advantages? Why you use it? </summary>
+<ul>
+<li>load test functional behavior and measure performance.</li>
+</ul>
+</details>
+
+<hr>
+<details>
 <summary>What is JavaEE, Servlet, Tomcat and how do you use them? </summary>
 <ul>
     <li>The Java EE platform is built on top of the Java SE platform. The Java EE platform provides an API and runtime environment for developing and running large-scale, multi-tiered, reliable, and secure network applications. 
