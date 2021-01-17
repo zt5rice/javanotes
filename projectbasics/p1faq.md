@@ -62,12 +62,12 @@
 
 <details>
 <summary>What is a session?</summary>
-The session is a conversational state between client and server and it consists of multiple requests and responses between client and server. 
+<ul>The session is a conversational state between client and server and it consists of multiple requests and responses between client and server. </ul>
 </details>
 
 <details>
 <summary>Why do we need a session?</summary>
-The HTTP protocol and Web Servers are stateless, what it means is that for a web server every request is a new request to process and they can’t identify if it’s coming from a client that has been sending requests previously. But sometimes in web applications, we should know who the client is and process the request accordingly. For example, a shopping cart application should know who is sending the request to add an item and in which cart the item has to be added or who is sending a checkout request so that it can charge the amount to the correct client.
+<ul>The HTTP protocol and Web Servers are stateless, what it means is that for a web server every request is a new request to process and they can’t identify if it’s coming from a client that has been sending requests previously. But sometimes in web applications, we should know who the client is and process the request accordingly. For example, a shopping cart application should know who is sending the request to add an item and in which cart the item has to be added or who is sending a checkout request so that it can charge the amount to the correct client.</ul>
 </details>
 
 <details>
