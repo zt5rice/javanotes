@@ -1,6 +1,25 @@
 # Spring
 
 <details>
+<summary>Tell me something about your online shopping system. </summary>
+    <ul>
+        Used Spring framework to build a web application for users to shop and order items online. 
+        <li>Built a web application based on Spring MVC to support item search and listing (dependency injection, inversion of control, REST API, etc.).</li>
+        <li>Implemented security workflow via in-memory and JDBC authentication provided by Spring Security. </li>
+        <li>Utilized Hibernate to provide better support of database operations</li>
+        <li>Developed a Spring Web Flow to support item ordering.</li>
+</ul>
+</details>
+
+<details>
+<summary>Why do you design such system? </summary>
+<ul>
+</ul>
+</details>
+
+<br>
+
+<details>
 <summary>What is the Spring framework?</summary>
 <ul>Spring framework is an open source development framework for Enterprise Java. The core features of the Spring Framework can be used in developing any Java application, but there are extensions for building web applications on top of the Java EE platform.</ul>
 </details>
