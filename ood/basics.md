@@ -37,8 +37,22 @@
      - Between internal platform layer and database.
 
 - What is the benefit of load balancer?
-    
+    - Users experience faster, uninterrupted service. Users won’t have to wait for a single struggling server to finish its previous tasks. Instead, their requests are immediately passed on to a more readily available resource.
+    - Service providers experience less downtime and higher throughput. Even a full server failure won’t affect the end user experience as the load balancer will simply route around it to a healthy server.
+    - Load balancing makes it easier for system administrators to handle incoming requests while decreasing wait time for users.
+    - Smart load balancers provide benefits like predictive analytics that determine traffic bottlenecks before they happen. As a result, the smart load balancer gives an organization actionable insights. These are key to automation and can help drive business decisions.
+    - System administrators experience fewer failed or stressed components. Instead of a single device performing a lot of work, load balancing has several devices perform a little bit of work.
 
+- How does the load balancer choose the backend server?
+    - Only choose from health checks.
+    - Algorithm:
+        - Least Connection Method - when there are a large number of persistent client connections which are unevenly distributed between the servers.
+        - Least Response Time Method
+        - Least Bandwidth Method
+        - Round Robin Method - It is most useful when the servers are of equal specification and there are not many persistent connections.
+        - Weighted Round Robin Method -  Servers with higher weights receive new connections before those with less weights and servers with higher weights get more connections than those with less weights.
+        - IP Hash 
+        
 ## Caching
 
 
