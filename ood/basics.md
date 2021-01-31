@@ -28,7 +28,16 @@
     
 
 ## Load Balancing
+- What is load balancing?
+    - It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
+    
+- Where is the possible location of load balancer?
+     - Between the user and the web server
+     - Between web servers and an internal platform layer, like application servers or cache servers
+     - Between internal platform layer and database.
 
+- What is the benefit of load balancer?
+    
 
 ## Caching
 
