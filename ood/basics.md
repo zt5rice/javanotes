@@ -23,6 +23,10 @@
     </ul>
 </details>
 
+- What is the relationship between reliability and availability?
+    - If a system is reliable, it is available. However, if it is available, it is not necessarily reliable.
+    
+
 ## Load Balancing
 
 
