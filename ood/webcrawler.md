@@ -27,6 +27,7 @@ assume 100 kB/page + 500 byte meta data = (100k + 500)*15 b = 1.5PB
 70% storage capacity model: 1.5 / 0.7 = 2.14 PB
 10GB / 0.7 = 14.3 GB
 
+![High level design](webcrawlerSim.png)
 5. High level design
 
     - URL frontier - list of url (to download), determine future crawling sequence
@@ -48,7 +49,7 @@ assume 100 kB/page + 500 byte meta data = (100k + 500)*15 b = 1.5PB
         - large volume of web pages - need intelligent to prioritize download;
         - Rate of change on web pages
 
-
+![Detailed design](webcrawlerDetailed.png)
 6. Detailed component design
 
     - Module definition:
