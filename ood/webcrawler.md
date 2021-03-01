@@ -1,31 +1,35 @@
 # Web Crawler
-1. What is a web crawler? (网络蜘蛛/爬虫)
-program browses the World Wide Web in a methodical and automated manner
-Examples and Applications: 
-News digest;
-Search engines application to update data
-Create index for some purpose: search engine - faster searches by downloading all pages
-Mirror websites / Monitor website changes  
+1\. What is a web crawler? (网络蜘蛛/爬虫)
+
+- program browses the World Wide Web in a methodical and automated manner
+- Examples and Applications: 
+- News digest;
+    - Search engines application to update data
+    - Create index for some purpose: search engine - faster searches by downloading all pages
+    - Mirror websites / Monitor website changes  
 		
-2. Requirement for design - scalability and extensibility
-scalability - for larger demands up to 10 billion pages
+2\. Requirement for design - scalability and extensibility
+    
+   - scalability - for larger demands up to 10 billion pages
 					100k 
-extensibility - possible for adding new functions
+   - extensibility - possible for adding new functions
 
-3. Design consideration:
-only HTML pages, not audio/video or other media
-only HTTP protocol, FTP not accepted;
-expected number of pages ? 1 billion! 10,000
-Will deal with Robot exclusion - download authority txt file from target website
+3\. Design consideration:
 
-4. Capacity estimation and constraints
-Processing speed: 15 B / 4 weeks = 6.2 kpages/s
-100k / 60.0s = 1.6 kpages/s
-Storage: 
-assume 100 kB/page + 500 byte meta data = (100k + 500)*15 b = 1.5PB
-(100k + 500)*100 k  = 10GB
-70% storage capacity model: 1.5 / 0.7 = 2.14 PB
-10GB / 0.7 = 14.3 GB
+   - only HTML pages, not audio/video or other media
+   - only HTTP protocol, FTP not accepted;
+   - expected number of pages ? 1 billion! 10,000
+   - Will deal with Robot exclusion - download authority txt file from target website
+
+4\. Capacity estimation and constraints
+
+   - Processing speed: 15 B / 4 weeks = 6.2 kpages/s
+   - 100k / 60.0s = 1.6 kpages/s
+   - Storage: 
+        - assume 100 kB/page + 500 byte meta data = (100k + 500)*15 b = 1.5PB
+        - (100k + 500)*100 k  = 10GB
+        - 70% storage capacity model: 1.5 / 0.7 = 2.14 PB
+        - 10GB / 0.7 = 14.3 GB
 
 ![High level design](webcrawlerSim.png)
 
