@@ -28,31 +28,32 @@ assume 100 kB/page + 500 byte meta data = (100k + 500)*15 b = 1.5PB
 10GB / 0.7 = 14.3 GB
 
 ![High level design](webcrawlerSim.png)
-5. High level design
 
-    - URL frontier - list of url (to download), determine future crawling sequence
-    - HTML fetcher - retrieve webpage from server
-    - Extractor - extract link from HTML
-    - Duplicate eliminator - remove unintentionally duplicated web extraction
-    - Data store - store retrieved pages, URL and metadata;
+5\. High level design
 
-    a. How to crawl?
-       
+   - URL frontier - list of url (to download), determine future crawling sequence
+   - HTML fetcher - retrieve webpage from server
+   - Extractor - extract link from HTML
+   - Duplicate eliminator - remove unintentionally duplicated web extraction
+   - Data store - store retrieved pages, URL and metadata;
+   a. How to crawl?
+
        - DFS v.s. BFS: BFS usually used, except some special cases;
 
-    b. Why BFS/DFS?
-    
-        - Path-ascending crawling? e.g. http://a.com/b/c.html, search http://a.com/b, http://a.com/ 
+   b. Why BFS/DFS?
+     
+   - Path-ascending crawling? e.g. http://a.com/b/c.html, search http://a.com/b, http://a.com/ 
 
-    c. Difficulty/Challenges in implementing a web crawler?
+   c. Difficulty/Challenges in implementing a web crawler?
     
-        - large volume of web pages - need intelligent to prioritize download;
-        - Rate of change on web pages
+   - large volume of web pages - need intelligent to prioritize download;
+   - Rate of change on web pages
 
 ![Detailed design](webcrawlerDetailed.png)
-6. Detailed component design
 
-    - Module definition:
+6\. Detailed component design
+
+   - Module definition:
         - URL frontier - list of url (to download), determine future crawling sequence
         - The fetcher module -  to download the document corresponding to a given URL using the appropriate network protocol like HTTP. (robot’s exclusion rule here)
         - DIS (Document input stream) - cache the ENTIRE small document (<64 kB) locally using an abstraction; 				reread doc is possible.If larger, temporally writes to a backing file; a thread <->DIS; Hence reuses many times. Thread passes DIS to all relevant processing modules;
@@ -62,29 +63,29 @@ assume 100 kB/page + 500 byte meta data = (100k + 500)*15 b = 1.5PB
         - URL dedupe test: While extracting links, any Web crawler will encounter multiple links to the same document. 			To reduce the number of operations on DB,  keep an in-memory cache of popular URLs on each host shared by all threads;		Space for URL store: 4 bit checksum -> 15 billion * 4 bytes = 60 GB;									Bloom filter for deduping? Hashing yields false positive -> missing URL to frontier.
         - Checkpointing: avoid failure in weeks’ completing time. 		Action - write regular snapshots of state to disk -> restore easily from last checkpoint.
 
-    - Fault tolerance
+   - Fault tolerance
         Tool:  consistent hashing for distribution among crawling servers
         Application: 
         replacing a dead host 
         distributing load among crawling servers.
         Data partitioning
 
-     - three kinds of data: 
+   - three kinds of data: 
         1) URLs to visit 
         2) URL checksums for dedupe 
         3) Document checksums for dedupe.
 
-    - Distributing URLs based on hostname -> In each host, stores URL to visit, above three data;
+   - Distributing URLs based on hostname -> In each host, stores URL to visit, above three data;
 
-    - To increase availability ->Check host periodically, dump  snapshots of all data to remove servers.
+   - To increase availability ->Check host periodically, dump  snapshots of all data to remove servers.
 
-    - Crawler traps
+   - Crawler traps
         a URL or set of URLs that cause a crawler to crawl indefinitely.
-    - Application:
+   - Application:
         - Anti-spam trap for privacy protection;
         - Boost search rating by catching search engine crawler;
 
-    - Appendix:
+   - Appendix:
         How to implement multiple thread web crawlers? Why?
 
 
