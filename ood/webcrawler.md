@@ -88,7 +88,7 @@
    - Application:
         - Anti-spam trap for privacy protection;
         - Boost search rating by catching search engine crawler;
-
+        
    - Appendix:
         How to implement multiple thread web crawlers? Why?
 
